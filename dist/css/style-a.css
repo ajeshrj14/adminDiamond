@@ -272,6 +272,7 @@ span.infoicon {position: absolute;right: 8px;top: 6px;font-size: 13px;}
 .infoRelative input {padding-right: 23px;}
 
 .activeRow{background:#efe2b7;}
+.table-sm td, .table-sm th { padding: 3px; font-size: 11px;}
 
 
 @media (min-width: 992px) {
