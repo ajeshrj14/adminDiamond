@@ -319,7 +319,7 @@ body.darkTheme{color: #eee;}
 .darkTheme .main-footer { background: #181b23; border-top: 1px solid #181b23;}
 .darkTheme .input-group{background: #191c22;}
 .darkTheme .fileGd { background: #21252f; border: 1px dashed #4e5562;}
-.darkTheme a.nav-link:focus {background: #000000;}
+.darkTheme a.nav-link:focus {background: #000000; color:#eee;}
 .darkTheme .dropdown-menu{background-color: #2d3341;}
 .darkTheme .dropdown-item{color: #c9c9c9;}
 .darkTheme .dropdown-divider{border-top: 1px solid #3c4456;}
