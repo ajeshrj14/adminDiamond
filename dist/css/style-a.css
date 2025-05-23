@@ -285,10 +285,8 @@ span.infoicon {position: absolute;right: 8px;top: 6px;font-size: 13px;}
 .iconamoon--mode-light::after {display: inline-block;width: 24px;height: 24px;vertical-align: -0.125em;
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23f2ff43' stroke-width='1.9'%3E%3Ccircle cx='12' cy='12' r='4' stroke-linejoin='round'/%3E%3Cpath stroke-linecap='round' d='M20 12h1M3 12h1m8 8v1m0-18v1m5.657 13.657l.707.707M5.636 5.636l.707.707m0 11.314l-.707.707M18.364 5.636l-.707.707'/%3E%3C/g%3E%3C/svg%3E");
 }
-
 .darkIcon { display: flex; align-items: center; justify-content: center; padding: 5px;cursor:pointer;}
 .darkIcon span{height:23px;}
-
 body.darkTheme{color: #eee;}
 .darkTheme .wrapper{background: #000000;}
 .darkTheme .main-sidebar { background: #181b23;}
