@@ -75,7 +75,7 @@ span.actionBtn {position: absolute;right: 8px;top: 6px;cursor: pointer;}
 
 .input-group {display: flex;align-items: flex-start;margin-bottom: 10px;background:#ebebeb;
 padding: 10px;border-radius: 10px;}
-.input-group input {}
+
 .input-group button {margin-left: 5px;}
 .input-group button:hover,.input-group button:active{opacity:.8;}
 .add-btn,.add-btn-lnk {background-color:#101010;color: white;padding: 8px;border: none;cursor: pointer; border-radius: 5px;
