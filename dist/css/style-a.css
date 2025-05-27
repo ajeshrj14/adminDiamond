@@ -273,7 +273,7 @@ span.infoicon {position: absolute;right: 8px;top: 6px;font-size: 13px;}
 
 .activeRow{background:#efe2b7;}
 .table-sm td, .table-sm th { padding: 3px; font-size: 11px;}
-.isActiveLabl label {margin: 0;}
+label.isActiveLabl {margin: 0;}
 .isActiveLabl { display: flex; align-items: center; justify-content: center;  gap: 5px;}
 
 
