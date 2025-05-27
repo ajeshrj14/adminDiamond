@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="icon" href="dist/img/fav-icon.png" type="image/gif" />
-  <title>Diamond Admin</title>
+  <title>Diamond Admin sub category</title>
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
@@ -49,11 +49,11 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
 
-            <li class="nav-item darkIcon">
-              <span class="material-symbols-light--dark-mode-rounded dark-ico"></span>
-              <span class="iconamoon--mode-light light-ico" style="display: none; "></span>
-            
-            </li>
+      <li class="nav-item darkIcon">
+         <span class="material-symbols-light--dark-mode-rounded dark-ico"></span>
+        <span class="iconamoon--mode-light light-ico" style="display: none; "></span>
+       
+      </li>
 
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item dropdown">
@@ -95,7 +95,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview">
-            <a href="item-master.html" class="nav-link active">
+            <a href="item-master.html" class="nav-link">
               <i class="nav-icon fas fa-window-restore"></i>
               <p>
                Item Master
@@ -103,6 +103,7 @@
               </p>
             </a>
           </li>
+         
           <li class="nav-item has-treeview">
             <a href="category-master.html" class="nav-link">
               <i class="nav-icon fas fa-user-circle"></i>
@@ -112,8 +113,8 @@
               </p>
             </a>
           </li>
-          <li class="nav-item has-treeview">
-            <a href="sub-category-master.html" class="nav-link">
+           <li class="nav-item has-treeview">
+            <a href="sub-category-master.html" class="nav-link active">
               <i class="nav-icon fas fa-map"></i>
               <p>
                Sub Category Master
@@ -190,12 +191,12 @@
       <div class="container-fluid">
         <div class="row mb-2" style="width: min(1200px, 100%);  margin: 0px auto;">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Item Master</h1>
+            <h1 class="m-0 text-dark">Sub Category Master</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Item master</li>
+              <li class="breadcrumb-item active">Sub Category Master</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -211,8 +212,8 @@
             <div class="card mainOuter">
               <div class="card-header p-2">
                 <ul class="nav nav-pills">
-                  <li class="nav-item"><a class="nav-link" href="#itemmastersearch" data-toggle="tab">Item Master Search</a></li>
-                  <li class="nav-item"><a class="nav-link active" href="#itemmaster" data-toggle="tab">Item Master</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#itemmastersearch" data-toggle="tab">Sub Category Master Search</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="#itemmaster" data-toggle="tab">Sub Category Master</a></li>
                 </ul>
               </div><!-- /.card-header -->
               <div class="card-body">
@@ -222,7 +223,7 @@
 
                     <div class="card card-secondary">
                       <div class="card-header">
-                        <h3 class="card-title">Customer Search</h3>
+                        <h3 class="card-title">Sub Category Search</h3>
                       </div>
 
                       <div class="card-body" style="display: block;">
@@ -230,7 +231,7 @@
                         <table class="" style="width:77em;">
                           <tbody>
                               <tr>
-                                  <td style="width: 130px;">Customer Account No.</td>
+                                  <td style="width: 130px;">Category Name</td>
                                   <td>
                                       <div class="form-group">
                                         <div class="row1">
@@ -239,7 +240,7 @@
                                       </div>
                                       </div>
                                   </td>
-                                  <td style="width: 100px;">Customer Name</td>
+                                  <td style="width: 100px;">Sub Category Name</td>
                                   <td>
                                       <div class="form-group">
                                         <div class="row1">
@@ -248,7 +249,7 @@
                                        </div>
                                       </div>
                                   </td>
-                                   <td>
+                                  <td>
                                     <label class="isActiveLabl"><input type="checkbox">Is Active</label>
                                   </td>
                                   <td><button type="submit" class="btn btn-success searchBtn">Search</button></td>
@@ -364,7 +365,7 @@
                           <div class="col-md-6">
                             <div class="card card-secondary">
                               <div class="card-header">
-                                <h3 class="card-title">Item Basic Details</h3>
+                                <h3 class="card-title">Enter Sub Category Details</h3>
                               </div>
 
                               <div class="card-body" style="display: block;">
@@ -372,173 +373,48 @@
                                 <table style=" width: 100%;">
                                   <tbody>
                                     <tr>
-                                      <td><label class="fieldTitle" for="">Item Code/ Name</label>
-                                        <div class="form-group"><input type="text" required="" class="required"></div>
-                                      </td>
-                                    </tr>
-
-                                    <tr>
-                                      <td><label class="fieldTitle" for="">Media</label>
-                                        <div class="form-group">
-                                          <div class="mediaUpload">
-                                            <label for="file-upload" class="custom-file-upload"><i class="fas fa-upload"></i> Upload New</label>
-                                            <input id="file-upload" type="file" multiple accept="image/*,video/*" />
-                                            <span class="medianTxtlab">Accepts images, videos, or 3D models</span>
-                                            
-                                            <div class="uploadedMediaGridRow">
-                                                <!--append data-->
-                                            </div>
-
-                                            <span class="linkUpbtn">Upload with links</span>
-                                            <div class="linksInputContainer">
-                                              <div class="linksInputGp">
-                                                <input type="text" placeholder="Paste the link here">
-                                                <div style="display: flex;gap: 6px;">
-                                                  <button class="add-btn-lnk"><i class="fas fa-plus"></i></button>
-                                                  <button class="delete-btn-lnk"><i class="fas fa-trash-alt"></i></button>
-                                                </div>
-                                              </div>
-                                            </div>
-
-
-
+                                      <td>
+                                        <label class="fieldTitle" for="">Category Name</label>
+                                          <div class="form-group">
+                                            <select name="" id="">
+                                              <option value="">---</option>
+                                            </select>
                                           </div>
-                                        </div>
-
-                                      </td>
-                                    </tr>
-
-
-                                    <tr>
-                                      <td><label class="fieldTitle" for="">Item Type</label>
-                                        <div class="form-group">
-                                          <select name="" id="">
-                                            <option value="">---</option>
-                                          </select>
-                                        </div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><label class="fieldTitle" for="">Category Name</label>
-                                        <div class="form-group">
-                                          <select name="" id="">
-                                            <option value="">---</option>
-                                          </select>
-                                        </div>
                                       </td>
                                     </tr>
                                     <tr>
                                       <td><label class="fieldTitle" for="">Sub Category Name</label>
+                                        <div class="form-group"><input type="text" required="" class="required"></div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td><label class="fieldTitle" for="">Sub Category Image</label>
                                         <div class="form-group">
-                                          <div class="row1">
-                                            <div style="flex: 1 0 10px; min-width: inherit;"><input type="text"></div>
-                                            <button type="button" class="openBtn"><i class="fa fa-clone" aria-hidden="true"></i></button>
+                                          <div class="mediaUpload">
+                                            <label for="file-upload" class="custom-file-upload"><i class="fas fa-upload"></i> Upload New</label>
+                                            <input id="file-upload" type="file" multiple="" accept="image/*,video/*">
+                                            
+                                            <div class="uploadedMediaGridRow">
+                                                <!--append data-->
+                                            </div>
                                           </div>
                                         </div>
+
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td><label class="fieldTitle" for="">SKU</label>
-                                        <div class="form-group"><input type="text" required="" class="required"></div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><label class="fieldTitle" for="">Unit Of Measurements</label>
-                                        <div class="form-group"><input type="text" required="" class="required"></div>
-                                      </td>
-                                    </tr>
-                                  
-
-
+                                        <td><label class="fieldTitle" for="">Category Description</label>
+                                          <div class="form-group"><textarea name="" id="" rows="3"></textarea></div>
+                                        </td>
+                                      </tr>
+                               
                                   </tbody>
                                 </table>
                               </div>
                               <!-- /.card-body -->
                             </div><!--card-->
 
-                            <div class="card card-secondary">
-                              <div class="card-header">
-                                <h3 class="card-title">Pricing</h3>
-                              </div>
 
-                              <div class="card-body" style="display: block;">
-                                <div>
-                                  <table>
-                                    <tbody>
-                                      <tr>
-                                        <td><label class="fieldTitle" for="">Price</label>
-                                          <div class="form-group"><input type="text" required="" class="required" placeholder="$ 0.00"></div>
-                                        </td>
-                                        <td><label class="fieldTitle" for="">Compare-at price</label>
-                                          <div class="form-group infoRelative">
-                                            <input type="text" required="" class="required" placeholder="$ 0.00" style="text-decoration: line-through;"> 
-                                            <span class="infoicon" title="To display a markdown, enter a value higher than your price. Often shown with a strikethrough (e.g. $25.00)."><i class="fas fa-question-circle"></i></span>
-                                          </div>
-                                        </td>
-                                      </tr>
-                                  
-                                    </tbody>
-                                  </table>
-                                  <table>
-                                    <tbody>
-                                      <tr>
-                                        <td><label class="fieldTitle" for="">Cost per item</label>
-                                          <div class="form-group infoRelative">
-                                            <input type="text" required="" class="required" placeholder="$ 0.00"> 
-                                            <span class="infoicon" title="Customers won't see this"><i class="fas fa-question-circle"></i></span>
-                                          </div>
-                                        </td>
-                                        <td><label class="fieldTitle" for="">Profit</label>
-                                          <div class="form-group infoRelative">
-                                            <input type="text" required="" class="required" placeholder="$ 0.00"> 
-                                            <span class="infoicon" title="Profit"><i class="fas fa-question-circle"></i></span>
-                                          </div>
-                                        </td>
-                                        <td><label class="fieldTitle" for="">Margin</label>
-                                          <div class="form-group infoRelative">
-                                            <input type="text" required="" class="required" placeholder="$ 0.00"> 
-                                            <span class="infoicon" title="Margin"><i class="fas fa-question-circle"></i></span>
-                                          </div>
-                                        </td>
-                                      </tr>
-                                  
-                                    </tbody>
-                                  </table>
-                                  
-                                </div>
-                              </div>
-                              <!-- /.card-body -->
-                            </div><!--card-->
-
-                            <div class="card card-secondary">
-                              <div class="card-header">
-                                <h3 class="card-title">More Details</h3>
-                              </div>
-
-                              <div class="card-body" style="display: block;">
-                                <div>
-                                  <table style="width:100%;">
-                                    <tbody>
-                                      <tr>
-                                        <td><label class="fieldTitle" for="">Product Description Collapse</label>
-                                          <div class="form-group"><textarea name="" id="" rows="3"></textarea></div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td><label class="fieldTitle" for="">Other Information Collapse</label>
-                                          <div class="form-group"><textarea name="" id="" rows="3"></textarea></div>
-                                        </td>
-                                      </tr>
-                                    
-                                  
-                                    </tbody>
-                                  </table>
-
-                                  
-                                </div>
-                              </div>
-                              <!-- /.card-body -->
-                            </div><!--card-->
 
                           </div>
                           <div class="col-md-5">
@@ -560,23 +436,6 @@
                                 </table>
 
 
-                              </div>
-                              <!-- /.card-body -->
-                            </div><!--card-->
-
-                            <div class="card card-secondary">
-                              <div class="card-header">
-                                <h3 class="card-title">Variants</h3>
-                              </div>
-
-                              <div class="card-body" style="display: block;">
-                                 
-                                <div class="adVrBxOuter">
-                                  
-                                   <!--appeded here form js-->
-                                </div><!--adVrBxLoop-->
-
-                                <div class="addBtnOption"><span><i class="fas fa-plus"></i></span>Add Custom Options</div>
                               </div>
                               <!-- /.card-body -->
                             </div><!--card-->
@@ -788,176 +647,9 @@ $(document).on("click", ".deleteGridImg", function(){
 <!--End images upload and showing to below grid-->
 
 
-<!--image link and video link add input-->
-<script>
-$(document).ready(function(){
-  $(".linkUpbtn").click(function(){
-    $(".linksInputContainer").slideToggle();
-  });
-});
 
-  $(document).ready(function () {
-      function updateAddButton(container) {
-          $(container).find(".add-btn-lnk").remove(); // Remove all add buttons in the section
-          $(container).find(".linksInputGp:last").append('<button class="add-btn add-btn-lnk"><i class="fas fa-plus"></i></button>'); // Add only to the last input
-      }
 
-      // Add new input field when clicking the add button
-      $(document).on("click", ".add-btn-lnk", function () {
-          let container = $(this).closest(".linksInputContainer"); // Find the parent container
-          let newInputGroup = `
-                <div class="linksInputGp">
-                                                <input type="text" placeholder="Paste the link here">
-                                                <div style="display: flex;gap: 6px;">
-                                                  <button class="add-btn-lnk"><i class="fas fa-plus"></i></button>
-                                                  <button class="delete-btn-lnk"><i class="fas fa-trash-alt"></i></button>
-                                                </div>
-                                              </div>
-              
-          `;
-          container.append(newInputGroup);
-          updateAddButton(container);
-      });
 
-      // Remove input field when clicking delete button
-      $(document).on("click", ".delete-btn-lnk", function () { 
-          let container = $(this).closest(".linksInputContainer"); // Find the parent container
-          if (container.find(".linksInputGp").length > 1) {
 
-            $(this).parents(".linksInputGp").remove();
-              updateAddButton(container);
-          } else {
-              alert("At least one input field is required!");
-          }
-      });
-
-      // Initialize add button placement on load for each section
-      $(".linksInputContainer").each(function () {
-          updateAddButton(this);
-      });
-  });
-</script>
-<!--end image link and video link add input-->
-
-<!--click add button new input fields add-->
-<script>
-  $(document).ready(function () {
-      function updateAddButton(container) {
-          $(container).find(".add-btn").remove(); // Remove all add buttons in the section
-          $(container).find(".input-group:last").append('<button class="add-btn"><i class="fas fa-plus"></i></button>'); // Add only to the last input
-      }
-
-      // Add new input field when clicking the add button
-      $(document).on("click", ".add-btn", function () {
-          let container = $(this).closest(".input-container"); // Find the parent container
-          let newInputGroup = `
-                <div class="input-group">
-                                                <label class="fieldTitle" for="">Option Type Grid</label>
-                                                <div style="flex:1;gap: 5px;display: flex;flex-direction: column;">
-                                                  <div style="display: flex;gap: 10px;">
-                                                    <input type="text" placeholder="Name" style="flex: 1 0 65%;">
-                                                    <input type="text" placeholder="Price">
-                                                  </div>
-                                                  <div class="fileGd"><input type="file"></div>
-                                                  <input type="text" name="" id="" placeholder="Discription about it">
-                                                </div>
-                                                <button class="add-btn"><i class="fas fa-plus"></i></button>
-                                                <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                        
-                                              </div>
-              
-          `;
-          container.append(newInputGroup);
-          updateAddButton(container);
-      });
-
-      // Remove input field when clicking delete button
-      $(document).on("click", ".delete-btn", function () {
-          let container = $(this).closest(".input-container"); // Find the parent container
-          if (container.find(".input-group").length > 1) {
-              $(this).parent().remove();
-              updateAddButton(container);
-          } else {
-              alert("At least one input field is required!");
-          }
-      });
-
-      // Initialize add button placement on load for each section
-      $(".input-container").each(function () {
-          updateAddButton(this);
-      });
-  });
-</script>
-<!--click add button newinput fields add-->
-
-<!--Full custom option apped loop-->
-<script>
-   $(document).ready(function () {
-            // When Add button is clicked
-            $(".addBtnOption").click(function () {
-                let newDiv = `
-                 <div class="addVrBx">
-                             
-                                   <span class="addVrBxRemove-btn"><i class="fas fa-trash-alt"></i> Remove</span>
-                                    <table style="width:100%;">
-                                      <tr>
-                                        <td><label class="fieldTitle" for="">Option Name / Title</label>
-                                          <div class="form-group"><input type="text" required="" class="required" value="Gemstone Quality"></div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td><label class="fieldTitle" for="">Option Value / Label</label>
-                                          <div class="form-group"><input type="text" required="" class="required" value="Natural Stone"></div>
-                                        </td>
-                                      </tr>
-                                
-                                
-                                      <tr>
-                                        <td>
-                                          <div class="opTypeGp">
-                                
-                                            <div class="input-container">
-                                              <div class="input-group">
-                                                <label class="fieldTitle" for="">Option Type Grid</label>
-                                                <div style="flex:1;gap: 5px;display: flex;flex-direction: column;">
-                                                  <div style="display: flex;gap: 10px;">
-                                                    <input type="text" placeholder="Name" style="flex: 1 0 65%;">
-                                                    <input type="text" placeholder="Price">
-                                                  </div>
-                                                  <div class="fileGd"><input type="file"></div>
-                                                  <input type="text" name="" id="" placeholder="Discription about it">
-                                                </div>
-                                                <button class="add-btn"><i class="fas fa-plus"></i></button>
-                                                <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
-                                
-                                              </div>
-                                
-                                            </div>
-                                          </div><!--opTypeGp-->
-                                        </td>
-                                
-                                      </tr>
-                                
-                                
-                                      <tr>
-                                        <td><label class="fieldTitle" for="">Option Highlight</label>
-                                          <div class="form-group"><input type="text" required="" class="required" value="Popular"></div>
-                                        </td>
-                                      </tr>
-                                
-                                    </table>
-                                  </div>
-              
-          `;
-                $(".adVrBxOuter").append(newDiv);
-            });
-
-            // Ensure close button removes the respective div
-            $(document).on("click", ".addVrBxRemove-btn", function () {
-                $(this).parent().remove();
-            });
-        });
-</script>
-<!--End Full custom option apped loop-->
 </body>
 </html>

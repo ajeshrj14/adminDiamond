@@ -274,6 +274,58 @@ span.infoicon {position: absolute;right: 8px;top: 6px;font-size: 13px;}
 .activeRow{background:#efe2b7;}
 .table-sm td, .table-sm th { padding: 3px; font-size: 11px;}
 
+label.isActiveLabl {margin: 0;}
+.isActiveLabl { display: flex; align-items: center; justify-content: center;  gap: 5px;}
+
+
+/* for Dark theme */
+.material-symbols-light--dark-mode-rounded::after {
+  display: inline-block;width: 24px;height: 24px;vertical-align: -0.125em;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23111' d='M12.058 20q-3.333 0-5.667-2.334T4.058 12q0-2.47 1.413-4.535q1.414-2.067 4.01-2.973q.306-.107.536-.056t.381.199t.192.38q.04.233-.063.489q-.194.477-.282.971T10.158 7.5q0 2.673 1.863 4.537q1.864 1.863 4.537 1.863q.698 0 1.277-.148q.58-.148.988-.24q.218-.04.399.01t.292.176q.115.125.156.308t-.047.417q-.715 2.45-2.803 4.013T12.058 20'/%3E%3C/svg%3E");
+}
+.iconamoon--mode-light::after {display: inline-block;width: 24px;height: 24px;vertical-align: -0.125em;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23f2ff43' stroke-width='1.9'%3E%3Ccircle cx='12' cy='12' r='4' stroke-linejoin='round'/%3E%3Cpath stroke-linecap='round' d='M20 12h1M3 12h1m8 8v1m0-18v1m5.657 13.657l.707.707M5.636 5.636l.707.707m0 11.314l-.707.707M18.364 5.636l-.707.707'/%3E%3C/g%3E%3C/svg%3E");
+}
+.darkIcon { display: flex; align-items: center; justify-content: center; padding: 5px;cursor:pointer;}
+.darkIcon span{height:23px;}
+body.darkTheme{color: #eee;}
+.darkTheme .wrapper{background: #000000;}
+.darkTheme .main-sidebar { background: #181b23;}
+.darkIcon {transition: .2s linear 0s;}
+.darkIcon:hover { transform: scale(1.4);}
+.darkTheme .sidebar a { color: #ddd;}
+.darkTheme .nav-sidebar>.nav-item.menu-open>.nav-link, .darkTheme .nav-sidebar>.nav-item:hover>.nav-link, .darkTheme .nav-sidebar>.nav-item>.nav-link:focus{background-color: #0e0f14; color: #ffffff;}
+.darkTheme a.brand-link { width: 100%; border-color: #282828 !important;}
+.darkTheme .navbar-white {background-color: #181b23;}
+.darkTheme .main-sidebar { border-right: 1px solid #181b23;}
+.darkTheme .navbar-light .navbar-nav .nav-link {color: rgb(255 255 255 / 50%);}
+.darkTheme .content-wrapper{background: #000;}
+.darkTheme .main-header {border-bottom: 1px solid #000000;}
+.darkTheme .card, .darkTheme .card-body,.darkTheme .card-secondary:not(.card-outline)>.card-header  {background-color: #2d3341;}
+.darkTheme .mainOuter > .card-body { background: #181b23; border:1px solid #21252f;}
+.darkTheme .mainOuter > .card-header { background: #21252f;}
+.darkTheme .card-title {color: #ededed;}
+.darkTheme input[type="text"],.darkTheme  input[type="password"], .darkTheme input[type="date"],.darkTheme  textarea, .darkTheme select {
+    border: 1px solid #313746; background: #191c22; color: #eee;}
+.darkTheme .text-dark {color: #bebebe !important;}
+.darkTheme .table1 { border: 1px solid #4e5569; background: #353946;}
+.darkTheme .table1 thead {background: #4e5569;}
+.darkTheme .table thead th {border-bottom: 2px solid #4e5569;}
+.darkTheme .table td, .darkTheme .table th { border-top: 1px solid #4e5569;}
+.darkTheme .table tbody tr:hover, .darkTheme .table tbody tr:focus, .darkTheme .table tbody tr:active { background: #525d80;outline: 2px solid #525d80;}
+.darkTheme .activeRow {  background: #525d80;}
+.darkTheme .mediaUpload,.darkTheme .custom-file-upload { border: 1px dashed #4e5562;}
+.darkTheme .main-footer { background: #181b23; border-top: 1px solid #181b23;}
+.darkTheme .input-group{background: #191c22;}
+.darkTheme .fileGd { background: #21252f; border: 1px dashed #4e5562;}
+.darkTheme a.nav-link:focus {background: #000000; color:#eee;}
+.darkTheme .dropdown-menu{background-color: #2d3341;}
+.darkTheme .dropdown-item{color: #c9c9c9;}
+.darkTheme .dropdown-divider{border-top: 1px solid #3c4456;}
+.darkTheme .dropdown-item:focus,.darkTheme .dropdown-item:hover {background-color: #191c22;}
+/* End for Dark theme */
+
+
 
 @media (min-width: 992px) {
     .sidebar-mini.sidebar-collapse .main-sidebar, .sidebar-mini.sidebar-collapse .main-sidebar::before {
