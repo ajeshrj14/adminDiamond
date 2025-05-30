@@ -1,3 +1,7 @@
+:root{
+    --tabActiveColor:#e1c87a;
+}
+
 body{font-size: 13px;font-family: "Poppins", sans-serif;}
 .nav-sidebar>.nav-item .nav-icon{font-size: 16px !important;}
 .content-header {padding: 5px .5rem;}
@@ -11,6 +15,8 @@ table td { padding: 3px; line-height: 20px;  height: 0;font-size: 12px;}
 table   .form-group {margin-bottom: 0px;}
 .btn, input[type="text"], input[type="password"], select {padding: 0 5px;height: 30px; }
 .btn {padding: 0px 10px;line-height: initial; font-size: 12px;}
+.btn-sm{font-size: 11px; height: 25px;}
+.borderContainer{border: 1px solid #ddd; padding: 10px; border-radius: 5px;}
 .row1{display: -ms-flexbox; display: flex;  -ms-flex-wrap: wrap; flex-wrap: wrap;}
 .openBtn { background: linear-gradient(#7485af, #333b50);border: none;color: #fff;border-radius: 5px;margin-left: 4px;height: 30px;width: 30px;display: flex;align-items: center;
 justify-content: center;}
@@ -23,14 +29,14 @@ justify-content: center;}
 .card-body { padding: 8px;background: #fff; border-radius: 10px 10px 10px 10px;}
 input[type="text"],input[type="password"],input[type="date"],textarea,select {border: 1px solid #8b8b8b; border-radius: 7px; width: 100%;background: #fff;}
 input:disabled, select:disabled, textarea:disabled {background: #d0d6dc !important;}
-.card-title {font-size: 14px; font-weight: 500;position: relative; color: #000;}
+.card-title {font-size: 14px; font-weight: 600;position: relative; color: #000;}
 h3.card-title::after {width: 40px; height: 3px; content: ""; background: #ebc44a; position: absolute; bottom: -5px; left: 0;  border-radius: 50px;}
 /*.card{height:calc(100% - 1em);}*/
 .mainOuter > .card-header{background:#fff; border:none;}
 .mainOuter > .card-body{background: #f3f2f2;
     border: 1px solid #fff;}
 .mainOuter .nav-pills .nav-link {color: #ffffff; background: #5a626a; margin-right: 7px;padding: 5px 15px;}
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {  color: #000; background-color: #e1c87a;}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {  color: #000; background-color:var(--tabActiveColor);}
 .nav-link {padding:12px 15px;}
 a.nav-link:focus {background: #f3f3f3; border-radius: 4px;}
 .iconsBtn {padding: 0; background: no-repeat; border: none; font-size: 13px; outline: none;}
@@ -243,7 +249,7 @@ background-size: 40px;display: none;}
 .foldIcon.sm i {font-size: 13px;}
 
 .addGridSec {background: #ffffff;margin: 5px 0; border: 1px solid #ababab; border-radius: 3px;}
-label.fieldTitle {font-weight: 500 !important; margin-bottom: 3px;}
+label.fieldTitle {font-weight: 500 !important; margin-bottom: 3px;display: block;}
 
 
 
@@ -276,6 +282,19 @@ span.infoicon {position: absolute;right: 8px;top: 6px;font-size: 13px;}
 
 label.isActiveLabl {margin: 0;}
 .isActiveLabl { display: flex; align-items: center; justify-content: center;  gap: 5px;}
+
+.labelFlex {display: flex; align-items: center;  gap: 10px;background: #f2f2f2; padding: 7px; border-radius: 2px;}
+.labelFlex label { margin: 0; display: flex; gap: 5px; align-items: center;font-weight: 500 !important;}
+.width50 {width: min(330px, 100%);}
+/*.highlightTitle{color: #ffffff;
+    background: #dd418d;
+    display: inline-block;
+    padding: 0 15px; display:inline-block !important;
+    border-radius: 2px;}*/
+
+
+
+
 
 
 /* for Dark theme */
@@ -323,6 +342,9 @@ body.darkTheme{color: #eee;}
 .darkTheme .dropdown-item{color: #c9c9c9;}
 .darkTheme .dropdown-divider{border-top: 1px solid #3c4456;}
 .darkTheme .dropdown-item:focus,.darkTheme .dropdown-item:hover {background-color: #191c22;}
+.darkTheme .mainOuter { background: #21252f;}
+.darkTheme .labelFlex{background: #21252f;}
+.darkTheme .borderContainer {border: 1px solid #4e5569;}
 /* End for Dark theme */
 
 
