@@ -412,401 +412,87 @@
 
                                 <table style=" width: 100%;">
                                   <tbody>
-                                    <tr>
+                                    <!--<tr>
                                       <td>
-                                        <label class="fieldTitle" for="">Gemstone Label</label>
-                                          <div class="form-group labelFlex">
+                                         <label class="fieldTitle" for="">Gemstone Label (Stone Type)</label>
+                                         <div class="form-group labelFlex">
                                               <label for="la1"><input type="checkbox" id="la1">Lab Grown</label>
                                               <label for="la2"><input type="checkbox" id="la2">Natural</label>
                                           </div>
+                                         
+                                      </td>
+                                    </tr>-->
+                                    <tr>
+                                      <td><label class="fieldTitle" for="">Name</label>
+                                        <div class="form-group"><input type="text" required="" class="required"></div>
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td><label class="fieldTitle" for="">Gemstone Type</label>
+                                        <td><label class="fieldTitle" for="">Description</label>
+                                          <div class="form-group">  <textarea name="" id=""></textarea></div>
+                                        </td>
+                                    </tr>
+                                      
+                                    <tr>
+                                        <td><label class="fieldTitle" for="">Stone Type</label>
+                                          <div class="form-group">  
+                                            <select name="" id="">
+                                            <option value="">Natural</option>
+                                            <option value="">Lab Grown</option>
+                                          </select>
+                                          </div>
+                                        </td>
+                                    </tr>
                                        
+                                    <tr>
+                                        <td><label class="fieldTitle" for="">Stone Category</label>
+                                          <div class="form-group">  
+                                            <select name="" id="">
+                                            <option value="">Diamond</option>
+                                            <option value="">Gemdtone</option>
+                                          </select>
+                                          </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td><label class="fieldTitle" for="">Images</label>
+                                        <div class="form-group">
+                                          <div class="mediaUpload">
+                                            <label for="file-upload" class="custom-file-upload"><i class="fas fa-upload"></i> Upload New</label>
+                                            <input id="file-upload" type="file" multiple="" accept="image/*,video/*">
+                                            
+                                            <div class="uploadedMediaGridRow">
+                                                <!--append data-->
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td><label class="fieldTitle" for="">Certificate Image</label>
+                                        <div class="form-group">
+                                          <div class="mediaUpload">
+                                            <label for="file-upload" class="custom-file-upload"><i class="fas fa-upload"></i> Upload New</label>
+                                            <input id="file-upload" type="file" multiple="" accept="image/*,video/*">
+                                            
+                                            <div class="uploadedMediaGridRow">
+                                                <!--append data-->
+                                            </div>
+                                          </div>
+                                        </div>
+
                                       </td>
                                     </tr>
 
-                                    <tr>
-                                      <td>
-                                        <div class="opTypeGp">
-                                
-                                            <div class="input-container borderContainer">
-                                              <div class="input-group">
-                                                <label class="fieldTitle" for="">Option Type Grid</label>
-                                                <div style="flex:1;gap: 5px;display: flex;flex-direction: column;">
-                                                  <div style="display: flex;gap: 10px;">
-                                                    <input type="text" placeholder="Quality Type" value="Good" style="flex: 1 0 65%;">
-                                                    <input type="text" placeholder="Price">
-                                                  </div>
-                                                  <div class="fileGd"><input type="file"></div>
-                                                  <input type="text" name="" id="" placeholder="Discription about it">
-                                                </div>
-                                                
-                                              </div><!--input-group-->
-                                               <button type="button" class="btn btn-success btn-sm">Add</button>
-                                             
-                                            </div>
-                                          </div>
-                                      </td>
-                                    </tr>
                                
                                   </tbody>
                                 </table>
-                                <div class="table-responsive">
-                                  <table class="table table1 table-sm m-0">
-                                    <thead>
-                                      <tr>
-                                        <th>Quality Type</th>
-                                        <th>Price</th>
-                                        <th>Image</th>
-                                        <th>Description</th>
-                                        <th>Edit</th>
-                                        <th>Delete</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td><button type="button" class="iconsBtn editBtn" title="Edit"><i class="fas fa-edit"></i></button></td>
-                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr class="activeRow">
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                
-                                
-                                    </tbody>
-                                  </table>
-                                </div><!--table-responsive-->
+                               
                               </div>
                               <!-- /.card-body -->
                             </div><!--card-->
 
-                             <div class="card card-secondary">
-                              <div class="card-header">
-                                <h3 class="card-title">Carat Details</h3>
-                              </div>
-
-                              <div class="card-body" style="display: block;">
-
-                                <table style=" width: 100%;">
-                                  <tbody>
-                                    <tr>
-                                      <!--<td>
-                                        <label class="fieldTitle" for="">Carat Weight</label>
-                                          <div class="form-group labelFlex">
-                                              <label for="la1"><input type="checkbox" id="la1">Lab Grown</label>
-                                              <label for="la2"><input type="checkbox" id="la2">Natural</label>
-                                          </div>
-                                      </td>-->
-                                    </tr>
-                                    <tr>
-                                      <td><label class="fieldTitle" for="">Carat Weight</label>
-                                       
-                                      </td>
-                                    </tr>
-
-                                    <tr>
-                                      <td>
-                                        <div class="opTypeGp">
-                                
-                                            <div class="input-container borderContainer">
-                                              <div class="input-group">
-                                                <label class="fieldTitle" for="">Option Type Grid</label>
-                                                <div style="flex:1;gap: 5px;display: flex;flex-direction: column;">
-                                                  <div style="display: flex;gap: 10px;">
-                                                    <input type="text" placeholder="Carat Weight" value="0.39 Ct" style="flex: 1 0 65%;">
-                                                    <input type="text" placeholder="Price">
-                                                  </div>
-                                                  <div class="fileGd"><input type="file"></div>
-                                                  <input type="text" name="" id="" placeholder="Discription about it">
-                                                </div>
-                                                
-                                              </div><!--input-group-->
-                                               <button type="button" class="btn btn-success btn-sm">Add</button>
-                                             
-                                            </div>
-                                          </div>
-                                      </td>
-                                    </tr>
-                               
-                                  </tbody>
-                                </table>
-                                <div class="table-responsive">
-                                  <table class="table table1 table-sm m-0">
-                                    <thead>
-                                      <tr>
-                                        <th>Carat Weight</th>
-                                        <th>Price</th>
-                                        <th>Image</th>
-                                        <th>Description</th>
-                                        <th>Edit</th>
-                                        <th>Delete</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td><button type="button" class="iconsBtn editBtn" title="Edit"><i class="fas fa-edit"></i></button></td>
-                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr class="activeRow">
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                
-                                
-                                    </tbody>
-                                  </table>
-                                </div><!--table-responsive-->
-                              </div>
-                              <!-- /.card-body -->
-                            </div><!--card-->
-
-                            <div class="card card-secondary">
-                              <div class="card-header">
-                                <h3 class="card-title">Metal Details</h3>
-                              </div>
-
-                              <div class="card-body" style="display: block;">
-
-                                <table style=" width: 100%;">
-                                  <tbody>
-                                    <tr>
-                                      <!--<td>
-                                        <label class="fieldTitle" for="">Carat Weight</label>
-                                          <div class="form-group labelFlex">
-                                              <label for="la1"><input type="checkbox" id="la1">Lab Grown</label>
-                                              <label for="la2"><input type="checkbox" id="la2">Natural</label>
-                                          </div>
-                                      </td>-->
-                                    </tr>
-                                    <tr>
-                                      <td><label class="fieldTitle" for="">Metal Type</label>
-                                       
-                                      </td>
-                                    </tr>
-
-                                    <tr>
-                                      <td>
-                                        <div class="opTypeGp">
-                                
-                                            <div class="input-container borderContainer">
-                                              <div class="input-group">
-                                                <label class="fieldTitle" for="">Option Type Grid</label>
-                                                <div style="flex:1;gap: 5px;display: flex;flex-direction: column;">
-                                                  <div style="display: flex;gap: 10px;">
-                                                    <input type="text" placeholder="Metal Type" value="White Gold" style="flex: 1 0 65%;">
-                                                    <input type="text" placeholder="Price">
-                                                  </div>
-                                                  <div class="fileGd"><input type="file"></div>
-                                                  <input type="text" name="" id="" placeholder="Discription about it">
-                                                </div>
-                                                
-                                              </div><!--input-group-->
-                                               <button type="button" class="btn btn-success btn-sm">Add</button>
-                                             
-                                            </div>
-                                          </div>
-                                      </td>
-                                    </tr>
-                               
-                                  </tbody>
-                                </table>
-                                <div class="table-responsive">
-                                  <table class="table table1 table-sm m-0">
-                                    <thead>
-                                      <tr>
-                                        <th>Carat Weight</th>
-                                        <th>Price</th>
-                                        <th>Image</th>
-                                        <th>Description</th>
-                                        <th>Edit</th>
-                                        <th>Delete</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td><button type="button" class="iconsBtn editBtn" title="Edit"><i class="fas fa-edit"></i></button></td>
-                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr class="activeRow">
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                
-                                
-                                    </tbody>
-                                  </table>
-                                </div><!--table-responsive-->
-                              </div>
-                              <!-- /.card-body -->
-                            </div><!--card-->
 
 
                           </div>
@@ -834,279 +520,95 @@
                             </div><!--card-->
 
 
-
-                            <div class="card card-secondary">
-                              <div class="card-header">
-                                <h3 class="card-title">Chain Length Details</h3>
+                             <div class="card card-secondary">
+                              <div class="card-header" style="display: flex; justify-content: space-between;">
+                                <h3 class="card-title">Gemstone Quality</h3>
+                               <button type="button" class="btn btn-success btn-sm ml-auto" data-toggle="modal" data-target="#UploderPop"><i class="fas fa-plus"></i> Add Quality</button>
                               </div>
-
                               <div class="card-body" style="display: block;">
-
-                                <table style=" width: 100%;">
-                                  <tbody>
-                                    <tr>
-                                      <!--<td>
-                                        <label class="fieldTitle" for="">Carat Weight</label>
-                                          <div class="form-group labelFlex">
-                                              <label for="la1"><input type="checkbox" id="la1">Lab Grown</label>
-                                              <label for="la2"><input type="checkbox" id="la2">Natural</label>
-                                          </div>
-                                      </td>-->
-                                    </tr>
-                                    <tr>
-                                      <td><label class="fieldTitle" for="">Chain Length</label>
-                                       
-                                      </td>
-                                    </tr>
-
-                                    <tr>
-                                      <td>
-                                        <div class="opTypeGp">
-                                
-                                            <div class="input-container borderContainer">
-                                              <div class="input-group">
-                                                <label class="fieldTitle" for="">Option Type Grid</label>
-                                                <div style="flex:1;gap: 5px;display: flex;flex-direction: column;">
-                                                  <div style="display: flex;gap: 10px;">
-                                                    <input type="text" placeholder="Chain Length" value="18 Inch" style="flex: 1 0 65%;">
-                                                    <input type="text" placeholder="Price">
-                                                  </div>
-                                                  <div class="fileGd"><input type="file"></div>
-                                                  <input type="text" name="" id="" placeholder="Discription about it">
-                                                </div>
-                                                
-                                              </div><!--input-group-->
-                                               <button type="button" class="btn btn-success btn-sm">Add</button>
-                                             
-                                            </div>
-                                          </div>
-                                      </td>
-                                    </tr>
-                               
-                                  </tbody>
-                                </table>
-                                <div class="table-responsive">
+                               <div class="table-responsive" style="display:none;">
                                   <table class="table table1 table-sm m-0">
                                     <thead>
                                       <tr>
-                                        <th>Carat Weight</th>
-                                        <th>Price</th>
+                                        <th>Quality</th>
+                                        <th>Price/Carat</th>
                                         <th>Image</th>
                                         <th>Description</th>
-                                        <th>Edit</th>
                                         <th>Delete</th>
                                       </tr>
                                     </thead>
                                     <tbody>
                                       <tr>
                                         <td>---</td>
+                                        <td><div class="form-group"><input type="text" placeholder="0.00" style="width:60px; height: 25px;"></div></td>
                                         <td>---</td>
                                         <td>---</td>
-                                        <td>---</td>
-                                        <td><button type="button" class="iconsBtn editBtn" title="Edit"><i class="fas fa-edit"></i></button></td>
                                         <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
                                 
                                       </tr>
                                       <tr>
                                         <td>---</td>
+                                        <td><div class="form-group"><input type="text" placeholder="0.00" style="width:60px; height: 25px;"></div></td>
                                         <td>---</td>
                                         <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
+                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+
                                 
                                       </tr>
                                       <tr>
                                         <td>---</td>
+                                        <td><div class="form-group"><input type="text" placeholder="0.00" style="width:60px; height: 25px;"></div></td>
                                         <td>---</td>
                                         <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
+                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
                                 
                                       </tr>
                                       <tr class="activeRow">
                                         <td>---</td>
+                                        <td><div class="form-group"><input type="text" placeholder="0.00" style="width:60px; height: 25px;"></div></td>
                                         <td>---</td>
                                         <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
+                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
                                 
                                       </tr>
                                       <tr>
                                         <td>---</td>
+                                        <td><div class="form-group"><input type="text" placeholder="0.00" style="width:60px; height: 25px;"></div></td>
                                         <td>---</td>
                                         <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
+                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
                                 
                                       </tr>
                                       <tr>
                                         <td>---</td>
+                                        <td><div class="form-group"><input type="text" placeholder="0.00" style="width:60px; height: 25px;"></div></td>
                                         <td>---</td>
                                         <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
+                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
                                 
                                       </tr>
                                       <tr>
                                         <td>---</td>
+                                        <td><div class="form-group"><input type="text" placeholder="0.00" style="width:60px; height: 25px;"></div></td>
                                         <td>---</td>
                                         <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
+                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
                                 
                                       </tr>
                                 
                                 
                                     </tbody>
                                   </table>
-                                </div><!--table-responsive-->
-                              </div>
-                              <!-- /.card-body -->
-                            </div><!--card-->
+                                </div>
 
-                            <div class="card card-secondary">
-                              <div class="card-header">
-                                <h3 class="card-title">Chain Type Details</h3>
-                              </div>
 
-                              <div class="card-body" style="display: block;">
-
-                                <table style=" width: 100%;">
-                                  <tbody>
-                                    <tr>
-                                      <!--<td>
-                                        <label class="fieldTitle" for="">Carat Weight</label>
-                                          <div class="form-group labelFlex">
-                                              <label for="la1"><input type="checkbox" id="la1">Lab Grown</label>
-                                              <label for="la2"><input type="checkbox" id="la2">Natural</label>
-                                          </div>
-                                      </td>-->
-                                    </tr>
-                                    <tr>
-                                      <td><label class="fieldTitle" for="">Chain Type</label>
-                                       
-                                      </td>
-                                    </tr>
-
-                                    <tr>
-                                      <td>
-                                        <div class="opTypeGp">
-                                
-                                            <div class="input-container borderContainer">
-                                              <div class="input-group">
-                                                <label class="fieldTitle" for="">Option Type Grid</label>
-                                                <div style="flex:1;gap: 5px;display: flex;flex-direction: column;">
-                                                  <div style="display: flex;gap: 10px;">
-                                                    <input type="text" placeholder="Chain Type" value="Cable Chain" style="flex: 1 0 65%;">
-                                                    <input type="text" placeholder="Price">
-                                                  </div>
-                                                  <div class="fileGd"><input type="file"></div>
-                                                  <input type="text" name="" id="" placeholder="Discription about it">
-                                                </div>
-                                                
-                                              </div><!--input-group-->
-                                               <button type="button" class="btn btn-success btn-sm">Add</button>
-                                             
-                                            </div>
-                                          </div>
-                                      </td>
-                                    </tr>
-                               
-                                  </tbody>
-                                </table>
-                                <div class="table-responsive">
-                                  <table class="table table1 table-sm m-0">
-                                    <thead>
-                                      <tr>
-                                        <th>Carat Weight</th>
-                                        <th>Price</th>
-                                        <th>Image</th>
-                                        <th>Description</th>
-                                        <th>Edit</th>
-                                        <th>Delete</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td><button type="button" class="iconsBtn editBtn" title="Edit"><i class="fas fa-edit"></i></button></td>
-                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr class="activeRow">
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                
-                                      </tr>
-                                
-                                
-                                    </tbody>
-                                  </table>
-                                </div><!--table-responsive-->
                               </div>
                               <!-- /.card-body -->
                             </div><!--card-->
 
 
-                          </div>
+
+                          </div><!--col-->
 
                         </div>
                         <div class="row" style="position: absolute;top: -6.6em;z-index: 10000;margin: 0px auto;width: 100%;">
@@ -1182,40 +684,71 @@
 
 
 
- <!-- Image uploader popup -->
- <div class="modal fade" id="imgUploderPop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog  modal-dialog-centered">
+ <!-- uploader popup -->
+ <div class="modal fade" id="UploderPop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Image Upload</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add Gemstone Quality</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-          <table style="width: 100%;">
+          <div class="table-responsive">
+            <table class="table table1 table-sm m-0">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Quality</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
               <tbody>
-                  <tr>
-                      <td>
-                          <div class="form-group"><input type="file"></div>
-                      </td>
-                  </tr>
-
-                  <tr id="imgThumbShowHide">
-                      <td>
-                          <div class="thumbShown">
-                              <figure><img src="images/logo.png" alt=""></figure>
-                              <figcaption>Image Attached Show Here</figcaption>
-                          </div>
-                      </td>
-                  </tr>
-                  
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>Good</td>
+                  <td>---</td>
+                </tr>
+                 <tr>
+                  <td><input type="checkbox"></td>
+                  <td>Better</td>
+                  <td>---</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>Good</td>
+                  <td>---</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>Good</td>
+                  <td>---</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>Good</td>
+                  <td>---</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>Good</td>
+                  <td>---</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>Good</td>
+                  <td>---</td>
+                </tr>
+          
+          
               </tbody>
-          </table>
+            </table>
+          </div>
       </div><!--modal-body-->
       <div class="modal-footer">
         <div class="row1 btnGroup">
-          <button type="button" class="btn btn-success">Upload</button>
+          <button type="button" class="btn btn-success">Add</button>
           <!-- <button type="button" class="btn btnSm btnRed">Delete</button> -->
           <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
       </div>
