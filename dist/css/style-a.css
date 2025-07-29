@@ -13,7 +13,7 @@ body{font-size: 13px;font-family: "Poppins", sans-serif;}
 .content-header h1 {font-size: 20px; font-weight: 600;}
 table td { padding: 3px; line-height: 20px;  height: 0;font-size: 12px;}
 table   .form-group {margin-bottom: 0px;}
-.btn, input[type="text"], input[type="password"], select {padding: 0 5px;height: 30px; }
+.btn, input[type="text"], input[type="password"], input[type="date"], select {padding: 0 5px;height: 30px; }
 .btn {padding: 0px 10px;line-height: initial; font-size: 12px;}
 .btn-sm{font-size: 11px; height: 25px;}
 .borderContainer{border: 1px solid #ddd; padding: 10px; border-radius: 5px;}
@@ -291,6 +291,7 @@ label.isActiveLabl {margin: 0;}
     display: inline-block;
     padding: 0 15px; display:inline-block !important;
     border-radius: 2px;}*/
+.labelCheckBox{display: flex; gap: 5px; align-items: center; font-weight: 500!important;}
 
 
 
