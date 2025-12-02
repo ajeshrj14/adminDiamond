@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="icon" href="dist/img/fav-icon.png" type="image/gif" />
+  <title>Diamond Admin</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link href="dist/css/jquery-confirm.min.css" rel="stylesheet">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/css/style-a.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body class="hold-transition sidebar-mini">
+    <!-- Loader wrapper -->
+  <div id="loader-wrapper">
+    <img src="dist/img/loader.gif" alt="Loading...">
+  </div>
+
+
+<div class="wrapper">
+
+
+<div class="containerCtr">
+ <div class="login-container">
+    <h2>Admin Login</h2>
+
+      <div class="form-group">
+        <label for="adminUser">Username</label>
+        <input type="text" id="adminUser" name="adminUser">
+        <div class="error-message" id="userError">Username is required.</div>
+      </div>
+      <div class="form-group">
+        <label for="adminPass">Password</label>
+        <input type="password" id="adminPass" name="adminPass">
+        <div class="error-message" id="passError">Password is required.</div>
+      </div>
+       <div class="form-group">
+        <a href="#" class="forgotPassLink">Forgot Password ?</a>
+       </div>
+      <button type="submit" class="login-btn btn btn-success">Login</button>
+
+  </div>
+</div><!--containerCtr-->
+
+
+
+
+</div>
+<!-- ./wrapper -->
+
+
+
+
+
+ <!-- Image uploader popup -->
+ <div class="modal fade" id="imgUploderPop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Image Upload</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <table style="width: 100%;">
+              <tbody>
+                  <tr>
+                      <td>
+                          <div class="form-group"><input type="file"></div>
+                      </td>
+                  </tr>
+
+                  <tr id="imgThumbShowHide">
+                      <td>
+                          <div class="thumbShown">
+                              <figure><img src="images/logo.png" alt=""></figure>
+                              <figcaption>Image Attached Show Here</figcaption>
+                          </div>
+                      </td>
+                  </tr>
+                  
+              </tbody>
+          </table>
+      </div><!--modal-body-->
+      <div class="modal-footer">
+        <div class="row1 btnGroup">
+          <button type="button" class="btn btn-success">Upload</button>
+          <!-- <button type="button" class="btn btnSm btnRed">Delete</button> -->
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div> 
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+
+<script>
+    $(window).on('load', function () {
+      // Fade out loader and show content
+       setTimeout(function () {
+      $('#loader-wrapper').addClass('fade-out');
+
+      setTimeout(function () {
+        $('#loader-wrapper').hide();
+      }, 600); // Matches fade-out transition time
+
+       }, 500); // Matches fade-out transition time
+    });
+
+
+  </script>
+
+
+
+
+
+
+</body>
+</html>

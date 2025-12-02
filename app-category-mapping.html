@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="icon" href="dist/img/fav-icon.png" type="image/gif" />
-  <title>Diamond Admin sub category 2</title>
+  <title>Diamond Admin</title>
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
@@ -114,6 +114,24 @@
             </a>
           </li>
            <li class="nav-item has-treeview">
+            <a href="client-master.html" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+               Client Master
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+           <li class="nav-item has-treeview">
+            <a href="app-category-mapping.html" class="nav-link active">
+              <i class="nav-icon fab fa-app-store"></i>
+              <p>
+               App Category Mapping
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+           <li class="nav-item has-treeview">
             <a href="sub-category-master.html" class="nav-link">
               <i class="nav-icon fas fa-map"></i>
               <p>
@@ -123,7 +141,7 @@
             </a>
           </li>
            <li class="nav-item has-treeview">
-            <a href="gemstone-master.html" class="nav-link active">
+            <a href="gemstone-master.html" class="nav-link">
               <i class="nav-icon fas fa-gem"></i>
               <p>
               Gemstone Master
@@ -200,12 +218,12 @@
       <div class="container-fluid">
         <div class="row mb-2" style="width: min(1200px, 100%);  margin: 0px auto;">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Gemstone Master</h1>
+            <h1 class="m-0 text-dark">App Category Mapping</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Gemstone Master</li>
+              <li class="breadcrumb-item active">App Category Mapping</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -221,8 +239,8 @@
             <div class="card mainOuter">
               <div class="card-header p-2">
                 <ul class="nav nav-pills">
-                  <li class="nav-item"><a class="nav-link" href="#itemmastersearch" data-toggle="tab">Gemstone Search</a></li>
-                  <li class="nav-item"><a class="nav-link active" href="#itemmaster" data-toggle="tab">Gemstone Master</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#itemmastersearch" data-toggle="tab">App Category Mapping Search</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="#itemmaster" data-toggle="tab">App Category Mapping</a></li>
                 </ul>
               </div><!-- /.card-header -->
               <div class="card-body">
@@ -232,22 +250,21 @@
 
                     <div class="card card-secondary">
                       <div class="card-header">
-                        <h3 class="card-title">Gemstone Search</h3>
+                        <h3 class="card-title">App Category Search</h3>
                       </div>
 
                       <div class="card-body" style="display: block;">
 
-                        <table class="" style="width:77em;">
+                       <table class="" style="width:77em;">
                           <tbody>
                               <tr>
-
-                                  <td>
-                                     <label class="fieldTitle" for="">Gemstone Name</label>
+                                 <td>
+                                     <label class="fieldTitle" for="">App Category Name</label>
                                       <div class="form-group">
                                         <div class="row1">
                                          
                                           <div style="flex: 1 0 10px; min-width: inherit;" class="form-group">
-                                            <input type="text" required placeholder=" " >
+                                            <input type="text" required="" placeholder=" ">
                                           </div>
                                           <button type="button" class="openBtn"><i class="fa fa-clone" aria-hidden="true"></i></button>
                                       </div>
@@ -255,37 +272,41 @@
 
                                       
                                   </td>
-
-
-                                  <td>
-                                   <label class="fieldTitle" for="">Type</label>
-
+                                 <td>
+                                     <label class="fieldTitle" for="">Store Name</label>
                                       <div class="form-group">
                                         <div class="row1">
-                                          <div style="flex: 1 0 10px; min-width: inherit;"><input type="text"></div>
+                                         
+                                          <div style="flex: 1 0 10px; min-width: inherit;" class="form-group">
+                                            <input type="text" required="" placeholder=" ">
+                                          </div>
                                           <button type="button" class="openBtn"><i class="fa fa-clone" aria-hidden="true"></i></button>
-                                       </div>
                                       </div>
+                                      </div>
+
+                                      
                                   </td>
-                                  <td>
+                                  
+                                   <td>
                                     <label class="fieldTitle" for="">&nbsp;</label>
                                     <label class="isActiveLabl"><input type="checkbox">Is Active</label>
                                   </td>
-                                  <td>
+                                 <td>
                                      <label class="fieldTitle" for="">&nbsp;</label>
                                     <button type="submit" class="btn btn-success searchBtn">Search</button>
                                   </td>
                               </tr>
                           </tbody>
-                      </table>
+                       </table>
 
 
                       </div>
                       <!-- /.card-body -->
                    
                     </div>
+
                        
-                     <div class="paginationSec">
+                    <div class="paginationSec">
                       <div class="pageDisplay">
                         <span>Display</span>
                         <span>
@@ -316,6 +337,7 @@
                       </div>
                     </div>
 
+                 
 
                     <div class="card card-secondary">
                       <div class="card-header">
@@ -328,7 +350,7 @@
                           <thead>
                               <tr>
                                   <th>ID</th>
-                                  <th>Gemstone Name</th>
+                                  <th>Customer Name</th>
                                   <th>Edit</th>
                                   <th>Delete</th>
                               </tr>
@@ -394,7 +416,9 @@
                    
                     </div>
 
-
+       
+                    
+   
 
 
 
@@ -405,194 +429,112 @@
                           <div class="col-md-6">
                             <div class="card card-secondary">
                               <div class="card-header">
-                                <h3 class="card-title">Enter Gemstone Details</h3>
+                                <h3 class="card-title">App Category Mapping</h3>
                               </div>
 
                               <div class="card-body" style="display: block;">
 
                                 <table style=" width: 100%;">
                                   <tbody>
-                                    <!--<tr>
-                                      <td>
-                                         <label class="fieldTitle" for="">Gemstone Label (Stone Type)</label>
-                                         <div class="form-group labelFlex">
-                                              <label for="la1"><input type="checkbox" id="la1">Lab Grown</label>
-                                              <label for="la2"><input type="checkbox" id="la2">Natural</label>
-                                          </div>
-                                         
-                                      </td>
-                                    </tr>-->
                                     <tr>
-                                      <td><label class="fieldTitle" for="">Name</label>
-                                        <div class="form-group"><input type="text" required="" class="required"></div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                        <td><label class="fieldTitle" for="">Description</label>
-                                          <div class="form-group">  <textarea name="" id=""></textarea></div>
-                                        </td>
-                                    </tr>
-                                      
-                                    <tr>
-                                        <td><label class="fieldTitle" for="">Stone Type</label>
-                                          <div class="form-group">  
-                                            <select name="" id="">
-                                            <option value="">Natural</option>
-                                            <option value="">Lab Grown</option>
-                                          </select>
-                                          </div>
-                                        </td>
-                                    </tr>
-                                       
-                                    <tr>
-                                        <td><label class="fieldTitle" for="">Stone Category</label>
-                                          <div class="form-group">  
-                                            <select name="" id="">
-                                            <option value="">Diamond</option>
-                                            <option value="">Gemdtone</option>
-                                          </select>
-                                          </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                      <td><label class="fieldTitle" for="">Images</label>
+                                      <td><label class="fieldTitle" for="">Brand Name</label>
                                         <div class="form-group">
-                                          <div class="mediaUpload">
-                                            <label for="file-upload" class="custom-file-upload"><i class="fas fa-upload"></i> Upload New</label>
-                                            <input id="file-upload" type="file" multiple="" accept="image/*,video/*">
-                                            
-                                            <div class="uploadedMediaGridRow">
-                                                <!--append data-->
-                                            </div>
-                                          </div>
+                                          <select name="" id="" fdprocessedid="smhgku">
+                                            <option value="">---</option>
+                                          </select>
                                         </div>
-
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td><label class="fieldTitle" for="">Certificate Image</label>
+                                      <td><label class="fieldTitle" for="">App Category</label>
                                         <div class="form-group">
-                                          <div class="mediaUpload">
-                                            <label for="file-upload" class="custom-file-upload"><i class="fas fa-upload"></i> Upload New</label>
-                                            <input id="file-upload" type="file" multiple="" accept="image/*,video/*">
-                                            
-                                            <div class="uploadedMediaGridRow">
-                                                <!--append data-->
-                                            </div>
-                                          </div>
+                                          <select name="" id="" fdprocessedid="smhgku">
+                                            <option value="">---</option>
+                                          </select>
                                         </div>
-
                                       </td>
                                     </tr>
-
+                                    <tr>
+                                      <td><label class="fieldTitle" for="">Select Category</label>
+                                        <div class="form-group">
+                                          <button type="button" class="btn btn-success btn-sm ml-auto" data-toggle="modal" data-target="#UploderPop"><i class="fas fa-plus"></i> Select Category</button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                   
                                
                                   </tbody>
                                 </table>
-                               
                               </div>
                               <!-- /.card-body -->
                             </div><!--card-->
-
-
-
-                          </div>
-                          <div class="col-md-6">
-
-                            
-                            <div class="card card-secondary width50">
-                              <div class="card-body" style="display: block;">
-                                <table style="width:50%">
-                                  <tr>
-                                    <td><label class="fieldTitle" for="">Status</label>
-                                      <div class="form-group">
-                                        <select name="" id="">
-                                          <option value="">Active</option>
-                                          <option value="">In Active</option>
-                                        </select>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                </table>
-
-
-                              </div>
-                              <!-- /.card-body -->
-                            </div><!--card-->
-
-
                              <div class="card card-secondary">
-                              <div class="card-header" style="display: flex; justify-content: space-between;">
-                                <h3 class="card-title">Gemstone Quality</h3>
-                               <button type="button" class="btn btn-success btn-sm ml-auto" data-toggle="modal" data-target="#UploderPop"><i class="fas fa-plus"></i> Add Quality</button>
+                              <div class="card-header">
+                                <h3 class="card-title">App Category List</h3>
                               </div>
+
                               <div class="card-body" style="display: block;">
-                               <div class="table-responsive" style="display:none;">
+                                <div class="table-responsive">
                                   <table class="table table1 table-sm m-0">
                                     <thead>
                                       <tr>
-                                        <th>Quality</th>
-                                        <th>Price/Carat</th>
-                                        <th>Image</th>
-                                        <th>Description</th>
+                                        <th>App Category ID</th>
+                                        <th>App Category</th>
+                                        <th>Category</th>
+                                        <th>Brand</th>
+                                        <th>Select</th>
                                         <th>Delete</th>
                                       </tr>
                                     </thead>
                                     <tbody>
                                       <tr>
                                         <td>---</td>
-                                        <td><div class="form-group"><input type="text" placeholder="0.00" style="width:60px; height: 25px;"></div></td>
                                         <td>---</td>
                                         <td>---</td>
-                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash"
+                                              aria-hidden="true"></i></button></td>
                                 
                                       </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td><div class="form-group"><input type="text" placeholder="0.00" style="width:60px; height: 25px;"></div></td>
+                                       <tr>
                                         <td>---</td>
                                         <td>---</td>
-                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
-
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash"
+                                              aria-hidden="true"></i></button></td>
                                 
                                       </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td><div class="form-group"><input type="text" placeholder="0.00" style="width:60px; height: 25px;"></div></td>
+                                       <tr>
                                         <td>---</td>
                                         <td>---</td>
-                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash"
+                                              aria-hidden="true"></i></button></td>
                                 
                                       </tr>
-                                      <tr class="activeRow">
-                                        <td>---</td>
-                                        <td><div class="form-group"><input type="text" placeholder="0.00" style="width:60px; height: 25px;"></div></td>
+                                       <tr>
                                         <td>---</td>
                                         <td>---</td>
-                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash"
+                                              aria-hidden="true"></i></button></td>
                                 
                                       </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td><div class="form-group"><input type="text" placeholder="0.00" style="width:60px; height: 25px;"></div></td>
+                                       <tr>
                                         <td>---</td>
                                         <td>---</td>
-                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
-                                
-                                      </tr>
-                                      <tr>
-                                        <td>---</td>
-                                        <td><div class="form-group"><input type="text" placeholder="0.00" style="width:60px; height: 25px;"></div></td>
                                         <td>---</td>
                                         <td>---</td>
-                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
-                                
-                                      </tr>
-                                      <tr>
                                         <td>---</td>
-                                        <td><div class="form-group"><input type="text" placeholder="0.00" style="width:60px; height: 25px;"></div></td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash"
+                                              aria-hidden="true"></i></button></td>
                                 
                                       </tr>
                                 
@@ -601,14 +543,127 @@
                                   </table>
                                 </div>
 
-
                               </div>
                               <!-- /.card-body -->
                             </div><!--card-->
 
 
 
-                          </div><!--col-->
+                          </div>
+                          <div class="col-md-6">
+                             <div class="card card-secondary">
+                              <div class="card-header">
+                                <h3 class="card-title">App Sub Category Mapping</h3>
+                              </div>
+
+                              <div class="card-body" style="display: block;">
+
+                                <table style=" width: 100%;">
+                                  <tbody>
+                                    <tr>
+                                      <td><label class="fieldTitle" for="">App Sub Category</label>
+                                        <div class="form-group">
+                                          <select name="" id="" fdprocessedid="smhgku">
+                                            <option value="">---</option>
+                                          </select>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                      <td><label class="fieldTitle" for="">Select Sub Category</label>
+                                        <div class="form-group">
+                                          <button type="button" class="btn btn-success btn-sm ml-auto" data-toggle="modal" data-target="#UploderPop"><i class="fas fa-plus"></i> Select Sub Category</button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                   
+                               
+                                  </tbody>
+                                </table>
+                                
+                              </div>
+                              <!-- /.card-body -->
+                            </div><!--card-->
+                            <div class="card card-secondary">
+                              <div class="card-header">
+                                <h3 class="card-title">App Sub Category Mapping List</h3>
+                              </div>
+
+                              <div class="card-body" style="display: block;">
+                                <div class="table-responsive">
+                                  <table class="table table1 table-sm m-0">
+                                    <thead>
+                                      <tr>
+                                        <th>App Category Name</th>
+                                        <th>App Sub Category Name</th>
+                                        <th>Sub Category</th>
+                                        <th>Delete</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash"
+                                              aria-hidden="true"></i></button></td>
+                                
+                                      </tr>
+                                      <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                
+                                      </tr>
+                                      <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                
+                                      </tr>
+                                      <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                
+                                      </tr>
+                                      <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                
+                                      </tr>
+                                      <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                
+                                      </tr>
+                                      <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                
+                                      </tr>
+                                
+                                
+                                    </tbody>
+                                  </table>
+                                </div>
+
+                              </div>
+                              <!-- /.card-body -->
+                            </div><!--card-->
+
+
+                          </div>
 
                         </div>
                         <div class="row" style="position: absolute;top: -6.6em;z-index: 10000;margin: 0px auto;width: 100%;">
@@ -686,12 +741,12 @@
 
  <!-- uploader popup -->
  <div class="modal fade" id="UploderPop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog  modal-dialog-centered modal-lg">
+<div class="modal-dialog  modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Gemstone Quality</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Select Category</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body">
@@ -699,45 +754,40 @@
             <table class="table table1 table-sm m-0">
               <thead>
                 <tr>
-                  <th></th>
-                  <th>Quality</th>
-                  <th>Description</th>
+                  <th>---</th>
+                  <th>---</th>
+                  <th>--</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><input type="checkbox"></td>
-                  <td>Good</td>
+                  <td>---</td>
+                  <td>---</td>
                   <td>---</td>
                 </tr>
                  <tr>
-                  <td><input type="checkbox"></td>
-                  <td>Better</td>
+                  <td>---</td>
+                  <td>---</td>
                   <td>---</td>
                 </tr>
-                <tr>
-                  <td><input type="checkbox"></td>
-                  <td>Good</td>
+                 <tr>
+                  <td>---</td>
+                  <td>---</td>
                   <td>---</td>
                 </tr>
-                <tr>
-                  <td><input type="checkbox"></td>
-                  <td>Good</td>
+                 <tr>
+                  <td>---</td>
+                  <td>---</td>
                   <td>---</td>
                 </tr>
-                <tr>
-                  <td><input type="checkbox"></td>
-                  <td>Good</td>
+                 <tr>
+                  <td>---</td>
+                  <td>---</td>
                   <td>---</td>
                 </tr>
-                <tr>
-                  <td><input type="checkbox"></td>
-                  <td>Good</td>
+                 <tr>
                   <td>---</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox"></td>
-                  <td>Good</td>
+                  <td>---</td>
                   <td>---</td>
                 </tr>
           

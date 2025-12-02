@@ -8,12 +8,6 @@
   <link rel="icon" href="dist/img/fav-icon.png" type="image/gif" />
   <title>Diamond Admin Test</title>
 
-<script>
-  if (localStorage.getItem("theme") === "dark") {
-    document.documentElement.classList.add("darkTheme");
-  }
-</script>
-
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <link href="dist/css/jquery-confirm.min.css" rel="stylesheet">
@@ -574,119 +568,6 @@
                               <!-- /.card-body -->
                             </div><!--card-->
 
-                            <div class="card card-secondary">
-                              <div class="card-header">
-                                <h3 class="card-title">Common Attribute Details</h3>
-                              </div>
-
-                              <div class="card-body" style="display: block;">
-                                <div>
-                                  <table style="width:100%">
-                                    <tbody>
-                                      <tr>
-                                        <td><label class="fieldTitle" for="">Add Attributes</label>
-                                          <div class="form-group">
-                                            <div class="row1">
-                                              <div style="flex: 1 0 10px; min-width: inherit;"><input type="text" value="Attibute 1, Attibute 2, Attibute 3, Attibute 4"></div>
-                                              <button type="button" class="openBtn" data-toggle="modal" data-target="#attibutePop2"><i class="fa fa-clone" aria-hidden="true"></i></button>
-                                            </div>
-                                          </div>
-                                        </td>
-                                      </tr>
-                                      
-                                    </tbody>
-                                 </table>
-
-                                  
-                                </div>
-                              </div>
-                              <!-- /.card-body -->
-                            </div><!--card-->
-
-                            
-                            <div class="card card-secondary">
-                              <div class="card-header">
-                                <h3 class="card-title">Common Attributes Added</h3>
-                              </div>
-
-                              <div class="card-body" style="display: block;">
-                                <div class="attrGroup">
-                                  
-                                  <div class="attributeContainer">
-
-                                      <div class="attrRowBx">
-                                        <h4>Chain Length : <span id="">14, Weight: 3 grams</span> <i class="removeAttrIco">Remove</i></h4>
-                                        <ul class="attrListRw">
-                                          <li class="active">
-                                            <figure><img src="dist/img/landing.gif" alt=""></figure>
-                                            <figcaption>
-                                              <span>Good</span>
-                                            </figcaption>
-                                          </li>
-                                          <li>
-                                            <figure><img src="dist/img/landing.gif" alt=""></figure>
-                                            <figcaption>
-                                              <span>Better</span>
-                                            </figcaption>
-                                          </li>
-                                          <li>
-                                            <figure><img src="dist/img/landing.gif" alt=""></figure>
-                                            <figcaption>
-                                              <span>Best</span>
-                                              <b>Popular</b>
-                                            </figcaption>
-                                          </li>
-                                          <li>
-                                            <figure><img src="dist/img/landing.gif" alt=""></figure>
-                                            <figcaption>
-                                              <span>Heirloom</span>
-                                            </figcaption>
-                                          </li>
-                                        </ul>
-                                      </div><!--attrRowBx-->
-                                      <div class="attrRowBx">
-                                        <h4>Metal Type : <span id="">14K White Gold</span><i class="removeAttrIco">Remove</i></h4>
-                                        <ul class="attrListRw">
-                                          <li>
-                                            <figure><img src="dist/img/landing.gif" alt=""></figure>
-                                            <figcaption>
-                                              <span>0.25ct</span>
-                                            </figcaption>
-                                          </li>
-                                          <li>
-                                            <figure><img src="dist/img/landing.gif" alt=""></figure>
-                                            <figcaption>
-                                              <span>0.50ct</span>
-                                            </figcaption>
-                                          </li>
-                                          <li class="active">
-                                            <figure><img src="dist/img/landing.gif" alt=""></figure>
-                                            <figcaption>
-                                              <span>0.75ct</span>
-                                              <b>Popular</b>
-                                            </figcaption>
-                                          </li>
-                                          <li>
-                                            <figure><img src="dist/img/landing.gif" alt=""></figure>
-                                            <figcaption>
-                                              <span>0.85ct</span>
-                                            </figcaption>
-                                          </li>
-                                        </ul>
-                                      </div><!--attrRowBx-->
-
-
-                                  </div><!--attributeContainer-->
-
-                                 </div><!--attrGroup-->
-
-
-                               
-                              </div>
-                              <!-- /.card-body -->
-                            </div><!--card-->
-
-
                           </div>
                           <div class="col-md-6">
 
@@ -760,13 +641,18 @@
                                       </tr>
                                     </tbody>
                                  </table>
+
+                               
                               </div>
                               <!-- /.card-body -->
+                            </div><!--card-->
 
-                               <div class="card-header">
-                                <h3 class="card-title">Stone Attributes Details</h3>
+                              <div class="card card-secondary">
+                              <div class="card-header">
+                                <h3 class="card-title">Attributes Details</h3>
                               </div>
-                             <div class="card-body" style="display: block;">
+
+                              <div class="card-body" style="display: block;">
                                  <table style="width:100%">
                                     <tbody>
                                       <tr>
@@ -784,11 +670,11 @@
                                       
                                     </tbody>
                                  </table>
+
+                               
                               </div>
                               <!-- /.card-body -->
-
                             </div><!--card-->
-
 
                             <div class="card card-secondary">
                               <div class="card-header">
@@ -798,29 +684,6 @@
                               <div class="card-body" style="display: block;">
                                 <div class="attrGroup">
                                   <div class="attrGroupHead"><h4>Gemstone</h4><i class="editAttrIco">Edit</i><i class="removeAttrIco">Remove</i></div>
-
-                                  <div class="stLabBg" style="background:#f4f4f4; padding:5px;border-radius: 5px;">
-                                  <table style="width:100%;background: #f0f0f0;padding: 5px;margin-bottom: 1em;">
-                                      <tbody>
-                                        <tr>
-                                          <td><b>Stone Category</b></td>
-                                          <td>Gemstone</td>
-                                        </tr>
-                                        <tr>
-                                          <td><b>Name</b></td>
-                                          <td>Aquamarine</td>
-                                        </tr>
-                                        <tr>
-                                          <td><b>Stone Type</b></td>
-                                          <td>Natural</td>
-                                        </tr>
-                                        <tr>
-                                          <td><b>Stone in Grams</b></td>
-                                          <td>0.41</td>
-                                        </tr>
-                                      </tbody>
-                                  </table>
-                                  </div>
                                   
                                   <div class="attributeContainer">
 
@@ -1260,7 +1123,15 @@
                 </tr>
                 <tr>
                   <td><input type="checkbox"></td>
+                  <td>Chain Lenght</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
                   <td>Gemstone Quality</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox"></td>
+                  <td>Metal Type</td>
                 </tr>
                 <tr>
                   <td><input type="checkbox"></td>
@@ -1268,45 +1139,6 @@
                 </tr>
                 
           
-          
-              </tbody>
-            </table>
-          </div>
-      </div><!--modal-body-->
-      <div class="modal-footer">
-        <div class="row1 btnGroup">
-          <button type="button" class="btn btn-success">Add</button>
-          <!-- <button type="button" class="btn btnSm btnRed">Delete</button> -->
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-      </div>
-      </div>
-    </div>
-  </div>
-</div> 
- <!-- attibutes popup -->
-<div class="modal fade" id="attibutePop2" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-<div class="modal-dialog  modal-dialog-centered modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Attibutes</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          <div class="table-responsive">
-            <table class="table table1 table-sm m-0">
-
-              <tbody>
-                <tr>
-                  <td><input type="checkbox"></td>
-                  <td>Chain Length</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox"></td>
-                  <td>Metal Type</td>
-                </tr>
-                          
           
               </tbody>
             </table>

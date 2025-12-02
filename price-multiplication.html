@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="icon" href="dist/img/fav-icon.png" type="image/gif" />
-  <title>Diamond Admin sub category 2</title>
+  <title>Diamond Admin</title>
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
@@ -114,7 +114,43 @@
             </a>
           </li>
            <li class="nav-item has-treeview">
-            <a href="sub-category-master.html" class="nav-link active">
+            <a href="client-master.html" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+               Client Master
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+           <li class="nav-item has-treeview">
+            <a href="app-category-mapping.html" class="nav-link">
+              <i class="nav-icon fab fa-app-store"></i>
+              <p>
+               App Category Mapping
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+           <li class="nav-item has-treeview">
+            <a href="customer-master.html" class="nav-link">
+              <i class="nav-icon fas fa-handshake"></i>
+              <p>
+                Customer Master
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+           <li class="nav-item has-treeview">
+            <a href="customer-master.html" class="nav-link active">
+              <i class="nav-icon fas fa-dollar-sign"></i>
+              <p>
+                Price Multiplication
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+           <li class="nav-item has-treeview">
+            <a href="sub-category-master.html" class="nav-link">
               <i class="nav-icon fas fa-map"></i>
               <p>
                Sub Category Master
@@ -200,12 +236,12 @@
       <div class="container-fluid">
         <div class="row mb-2" style="width: min(1200px, 100%);  margin: 0px auto;">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Sub Category Master</h1>
+            <h1 class="m-0 text-dark">Price Multiplication</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Sub Category Master</li>
+              <li class="breadcrumb-item active">Price Multiplication</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -221,256 +257,206 @@
             <div class="card mainOuter">
               <div class="card-header p-2">
                 <ul class="nav nav-pills">
-                  <li class="nav-item"><a class="nav-link" href="#itemmastersearch" data-toggle="tab">Sub Category Master Search</a></li>
-                  <li class="nav-item"><a class="nav-link active" href="#itemmaster" data-toggle="tab">Sub Category Master</a></li>
+                  <li class="nav-item"><a class="nav-link active" href="#itemmastersearch" data-toggle="tab">Price Multiplication</a></li>
                 </ul>
               </div><!-- /.card-header -->
               <div class="card-body">
                 <div class="tab-content">
                   
-                  <div class="tab-pane" id="itemmastersearch">
+                  <div class="tab-pane active" id="itemmastersearch">
 
-                    <div class="card card-secondary">
-                      <div class="card-header">
-                        <h3 class="card-title">Sub Category Search</h3>
-                      </div>
-
-                      <div class="card-body" style="display: block;">
-
-                        <table class="" style="width:77em;">
-                          <tbody>
-                              <tr>
-                                  <td style="width: 130px;">Category Name</td>
-                                  <td>
-                                      <div class="form-group">
-                                        <div class="row1">
-                                          <div style="flex: 1 0 10px; min-width: inherit;"><input type="text"></div>
-                                          <button type="button" class="openBtn"><i class="fa fa-clone" aria-hidden="true"></i></button>
-                                      </div>
-                                      </div>
-                                  </td>
-                                  <td style="width: 100px;">Sub Category Name</td>
-                                  <td>
-                                      <div class="form-group">
-                                        <div class="row1">
-                                          <div style="flex: 1 0 10px; min-width: inherit;"><input type="text"></div>
-                                          <button type="button" class="openBtn"><i class="fa fa-clone" aria-hidden="true"></i></button>
-                                       </div>
-                                      </div>
-                                  </td>
-                                  <td>
-                                    <label class="isActiveLabl"><input type="checkbox">Is Active</label>
-                                  </td>
-                                  <td><button type="submit" class="btn btn-success searchBtn">Search</button></td>
-                              </tr>
-                          </tbody>
-                      </table>
-
-
-                      </div>
-                      <!-- /.card-body -->
-                   
-                    </div>
-                       
-                    <div class="paginationSec">
-                      <div class="pageDisplay">
-                        <span>Display</span>
-                        <span>
-                          <select name="" id="perpagecount" fdprocessedid="hg75o">
-                            <option value="30">30</option>
-                            <option value="60">60</option>
-                            <option value="100">100</option>
-                            <option value="200">200</option>
-                          </select>
-                        </span>
-                        <span>Per Page</span>
-                      </div>
-                      <nav aria-label="Page navigation">
-                  
-                        <ul class="pagination pagination-sm" id="pagination">
-                          <li class="page-item active"><a href="#" class="page-link">1</a></li>
-                          <li class="page-item"><a href="#" class="page-link">2</a></li>
-                          <li class="page-item"><a href="#" class="page-link">3</a></li>
-                          <li class="page-item"><a href="#" class="page-link">4</a></li>
-                        </ul>
-                  
-                        <ul class="paginationSearch pagination-sm" id="paginationSearch">
-                        </ul>
-                  
-                      </nav>
-                      <div class="pageDisInfo">
-                        <span id="totalcount">Viewing through 30(115 Total)</span>
-                      </div>
-                    </div>
-
-
-                    <div class="card card-secondary">
-                      <div class="card-header">
-                        <h3 class="card-title">Search Result</h3>
-                      </div>
-
-                      <div class="card-body" style="display: block;">
-
-                        <table class="table table1 m-0">
-                          <thead>
-                              <tr>
-                                  <th>ID</th>
-                                  <th>Customer Name</th>
-                                  <th>Edit</th>
-                                  <th>Delete</th>
-                              </tr>
-                          </thead>
-                      <tbody>
-                          <tr>
-                                  <td>---</td>
-                                  <td>---</td>
-                                  <td><button type="button" class="iconsBtn editBtn" title="Edit"><i class="fas fa-edit"></i></button></td>
-                                  <td><button type="button" class="iconsBtn deleteIcon" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
-
-                          </tr>
-                          <tr>
-                                  <td>---</td>
-                                  <td>---</td>
-                                  <td>---</td>
-                                  <td>---</td>
-
-                          </tr>
-                          <tr>
-                                  <td>---</td>
-                                  <td>---</td>
-                                  <td>---</td>
-                                  <td>---</td>
-
-                          </tr>
-                          <tr>
-                                  <td>---</td>
-                                  <td>---</td>
-                                  <td>---</td>
-                                  <td>---</td>
-
-                          </tr>
-                          <tr>
-                                  <td>---</td>
-                                  <td>---</td>
-                                  <td>---</td>
-                                  <td>---</td>
-
-                          </tr>
-                          <tr>
-                                  <td>---</td>
-                                  <td>---</td>
-                                  <td>---</td>
-                                  <td>---</td>
-
-                          </tr>
-                          <tr>
-                                  <td>---</td>
-                                  <td>---</td>
-                                  <td>---</td>
-                                  <td>---</td>
-
-                          </tr>
-                         
-                          
-                      </tbody>
-                       </table>
-
-
-                      </div>
-                      <!-- /.card-body -->
-                   
-                    </div>
-
-
-
-
-
-                  </div>
-                  <!-- /.tab-pane -->
-                  <div class="tab-pane  active" id="itemmaster">
-                        <div class="row">
-                          <div class="col-md-6">
+                     <div class="row">
+                          <div class="col-md-12">
                             <div class="card card-secondary">
                               <div class="card-header">
-                                <h3 class="card-title">Enter Sub Category Details</h3>
+                                <h3 class="card-title">Price Multiplication</h3>
                               </div>
 
                               <div class="card-body" style="display: block;">
-
-                                <table style=" width: 100%;">
+                                <table class="" style="width: 100%;">
                                   <tbody>
                                     <tr>
                                       <td>
-                                        <label class="fieldTitle" for="">Category Name</label>
-                                          <div class="form-group">
-                                            <select name="" id="">
-                                              <option value="">---</option>
-                                            </select>
-                                          </div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><label class="fieldTitle" for="">Sub Category Name</label>
-                                        <div class="form-group"><input type="text" required="" class="required"></div>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td><label class="fieldTitle" for="">Sub Category Image</label>
+                                        <label class="fieldTitle" for="">Select Company</label>
                                         <div class="form-group">
-                                          <div class="mediaUpload">
-                                            <label for="file-upload" class="custom-file-upload"><i class="fas fa-upload"></i> Upload New</label>
-                                            <input id="file-upload" type="file" multiple="" accept="image/*,video/*">
-                                            
-                                            <div class="uploadedMediaGridRow">
-                                                <!--append data-->
-                                            </div>
-                                          </div>
+                                          <select name="" id="" fdprocessedid="smhgku">
+                                            <option value="">--</option>
+                                          </select>
                                         </div>
-
                                       </td>
+                                      <td>
+                                        <label class="fieldTitle" for="">Select Category</label>
+                                        <div class="form-group">
+                                          <select name="" id="" fdprocessedid="smhgku">
+                                            <option value="">--</option>
+                                          </select>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <label class="fieldTitle" for="">Select Sub Category</label>
+                                        <div class="form-group">
+                                          <select name="" id="" fdprocessedid="smhgku">
+                                            <option value="">--</option>
+                                          </select>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <label class="fieldTitle" for="">Select Item</label>
+                                        <div class="form-group">
+                                          <input type="text" required="" placeholder=" ">
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <label class="fieldTitle" for="">&nbsp;</label>
+                                        <button type="submit" class="btn btn-success searchBtn">Search</button>
+                                      </td>
+                                       <td>
+                                        <label class="fieldTitle" for="">Apply Multiplication</label>
+                                        <div class="form-group">
+                                          <input type="text" required="" placeholder=" ">
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <label class="fieldTitle" for="">&nbsp;</label>
+                                        <button type="submit" class="btn btn-danger">Apply</button>
+                                      </td>
+
                                     </tr>
-                                    <tr>
-                                        <td><label class="fieldTitle" for="">Category Description</label>
-                                          <div class="form-group"><textarea name="" id="" rows="3"></textarea></div>
-                                        </td>
-                                      </tr>
-                               
                                   </tbody>
                                 </table>
+                                
+                               
+
                               </div>
                               <!-- /.card-body -->
-                            </div><!--card-->
+                            </div>
+                          </div><!--col-->
+                       </div><!--row-->
 
+                       <div class="row">
+                          <div class="col-md-12">
+                            <div class="card card-secondary">
+                              <div class="card-header">
+                                <h3 class="card-title">Price Details</h3>
+                              </div>
 
-
-                          </div>
-                          <div class="col-md-5">
-
-                            
-                            <div class="card card-secondary width50">
                               <div class="card-body" style="display: block;">
-                                <table style="width:50%">
-                                  <tr>
-                                    <td><label class="fieldTitle" for="">Status</label>
-                                      <div class="form-group">
-                                        <select name="" id="">
-                                          <option value="">Active</option>
-                                          <option value="">In Active</option>
-                                        </select>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                </table>
+                                  <table class="table table1 m-0">
+                                    <thead>
+                                      <tr>
+                                        <th>Category</th>
+                                        <th>Sub Category</th>
+                                        <th>Type</th>
+                                        <th>Product ID</th>
+                                        <th>Name</th>
+                                        <th>SKU Name</th>
+                                        <th>Selling Price</th>
+                                        <th>Price Applied in %</th>
+                                        <th>New Price</th>
+                                        <th>All Change</th>
 
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td><div class="form-group"><input type="text" required="" placeholder=" " name="new Price" style="width: 60px;"></div></td>
+                                        <td>---</td>
+                                      </tr>
+                                      <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td><div class="form-group"><input type="text" required="" placeholder=" " name="new Price" style="width: 60px;"></div></td>
+                                        <td>---</td>
+                                      </tr>
+                                      <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td><div class="form-group"><input type="text" required="" placeholder=" " name="new Price" style="width: 60px;"></div></td>
+                                        <td>---</td>
+                                      </tr>
+                                      <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td><div class="form-group"><input type="text" required="" placeholder=" " name="new Price" style="width: 60px;"></div></td>
+                                        <td>---</td>
+                                      </tr>
+                                      <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td><div class="form-group"><input type="text" required="" placeholder=" " name="new Price" style="width: 60px;"></div></td>
+                                        <td>---</td>
+                                      </tr>
+                                      <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td><div class="form-group"><input type="text" required="" placeholder=" " name="new Price" style="width: 60px;"></div></td>
+                                        <td>---</td>
+                                      </tr>
+                                      <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td><div class="form-group"><input type="text" required="" placeholder=" " name="new Price" style="width: 60px;"></div></td>
+                                        <td>---</td>
+                                      </tr>
+                                  
+                                  
+                                  
+                                    </tbody>
+                                  </table>
+                                
+                               
 
                               </div>
                               <!-- /.card-body -->
-                            </div><!--card-->
+                            </div>
+                          </div><!--col-->
+                       </div><!--row-->
 
 
-                          </div>
-
-                        </div>
                         <div class="row" style="position: absolute;top: -6.6em;z-index: 10000;margin: 0px auto;width: 100%;">
                           <div class="col-md-12">
                           
@@ -503,8 +489,16 @@
                             </table>
                           </div>
                         </div>
+
+       
+                    
+   
+
+
+
                   </div>
                   <!-- /.tab-pane -->
+
 
                 </div>
                 <!-- /.tab-content -->
@@ -544,40 +538,66 @@
 
 
 
- <!-- Image uploader popup -->
- <div class="modal fade" id="imgUploderPop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog  modal-dialog-centered">
+ <!-- uploader popup -->
+ <div class="modal fade" id="UploderPop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog  modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Image Upload</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Select Category</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body">
-          <table style="width: 100%;">
+          <div class="table-responsive">
+            <table class="table table1 table-sm m-0">
+              <thead>
+                <tr>
+                  <th>---</th>
+                  <th>---</th>
+                  <th>--</th>
+                </tr>
+              </thead>
               <tbody>
-                  <tr>
-                      <td>
-                          <div class="form-group"><input type="file"></div>
-                      </td>
-                  </tr>
-
-                  <tr id="imgThumbShowHide">
-                      <td>
-                          <div class="thumbShown">
-                              <figure><img src="images/logo.png" alt=""></figure>
-                              <figcaption>Image Attached Show Here</figcaption>
-                          </div>
-                      </td>
-                  </tr>
-                  
+                <tr>
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                </tr>
+                 <tr>
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                </tr>
+                 <tr>
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                </tr>
+                 <tr>
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                </tr>
+                 <tr>
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                </tr>
+                 <tr>
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                </tr>
+          
+          
               </tbody>
-          </table>
+            </table>
+          </div>
       </div><!--modal-body-->
       <div class="modal-footer">
         <div class="row1 btnGroup">
-          <button type="button" class="btn btn-success">Upload</button>
+          <button type="button" class="btn btn-success">Add</button>
           <!-- <button type="button" class="btn btnSm btnRed">Delete</button> -->
           <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
       </div>
