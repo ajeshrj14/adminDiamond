@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/ajeshrj14/adminDiamond@refs/heads/main/dist/css/style-a-CDN.css");
- 
+.rowScroll{overflow-x:auto;} 
 
 @media (prefers-color-scheme: dark){
 /* for Dark theme */
