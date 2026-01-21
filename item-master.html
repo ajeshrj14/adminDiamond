@@ -27,6 +27,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+
+
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -540,6 +542,88 @@
                                   </table>
                                   
                                 </div>
+
+                                <div class="priceBreakdown">
+                                  <div class="card mt-3">
+                                    <div class="card-header p-2" style="cursor: pointer;">
+                                      <h5 class="m-0 d-flex justify-content-between align-items-center" id="priceBreakdownToggle">
+                                        <span><i class="fas fa-chevron-right mr-2"></i>Price Breakdown</span>
+                                        <span style="font-size: 14px; color: #666;" id="priceBreakdownTotal">Total: $5265.33</span>
+                                      </h5>
+                                    </div>
+                                    <div class="card-body p-0" id="priceBreakdownContent" style="display: none;">
+                                      <div class="table-responsive">
+                                        <table class="table table-sm m-0" id="priceBreakdownTable">
+                                          <thead style="background: #f5f5f5;">
+                                            <tr>
+                                              <th>Component</th>
+                                              <th style="width: 120px;">Rate</th>
+                                              <th style="width: 120px;">Weight</th>
+                                              <th style="width: 150px; text-align: right;">Value</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody id="breakdownTableBody">
+                                           <tr>
+                                              <td>
+                                                <b style="display: block;">Metal</b> 
+                                                <span>(14k yellow gold)</span>
+                                              </td>
+                                              <td>$525.00</td>
+                                              <td>2.32g</td>
+                                              <td style="text-align: right;"><strong>$5265.33</strong></td>
+                                            </tr>
+                                           <tr>
+                                              <td> 
+                                                <b style="display: block;">Stone</b> 
+                                                <span>(Round Emerald X)</span>
+                                              </td>
+                                              <td>$525.00</td>
+                                              <td>2.32g</td>
+                                              <td style="text-align: right;"><strong>$265.00</strong></td>
+                                            </tr>
+                                           <tr>
+                                             <td> 
+                                                <b style="display: block;">Making Charges</b> 
+                                                <!-- <span>(Round Emerald X)</span> -->
+                                              </td>
+                                              <td>$57.00</td>
+                                              <td>---</td>
+                                              <td style="text-align: right;"><strong>$65.00</strong></td>
+                                            </tr>
+                                           <tr>
+                                             <td> 
+                                                <b style="display: block;">Stone Value</b> 
+                                                <!-- <span>(Round Emerald X)</span> -->
+                                              </td>
+                                              <td>$70.00</td>
+                                              <td>---</td>
+                                              <td style="text-align: right;"><strong>$65.00</strong></td>
+                                            </tr>
+                                           <tr>
+                                              <td> 
+                                                <b style="display: block;">GST</b> 
+                                                <!-- <span>(Round Emerald X)</span> -->
+                                              </td>
+                                              <td>$25.00</td>
+                                              <td>----</td>
+                                              <td style="text-align: right;"><strong>$55.00</strong></td>
+                                            </tr>
+                                          </tbody>
+                                          <tfoot style="border-top: 2px solid #ddd;">
+                                            <tr>
+                                              <td colspan="3" style="text-align: right; font-weight: bold;">Total:</td>
+                                              <td style="font-weight: bold; text-align: right;padding-right: 1.5rem;" id="breakdownGrandTotal">$5265.33</td>
+                                            </tr>
+                                          </tfoot>
+                                        </table>
+                                          <p style="padding: 4px 10px;background: #f0e5e5;">The Final Invoice Amount will be adjusted in case of variation in weight.</p>
+
+                                      </div>
+
+                                    </div>
+                                  </div>
+                                </div><!--priceBreakdown-->
+
                               </div>
                               <!-- /.card-body -->
                             </div><!--card-->
@@ -615,7 +699,7 @@
                                   <div class="attributeContainer">
 
                                       <div class="attrRowBx">
-                                        <h4>Chain Length : <span id="">14, Weight: 3 grams</span> <i class="removeAttrIco">Remove</i></h4>
+                                        <h4>Chain Length : <span id="">14, Weight: 3 grams</span> <i class="editAttrIco editAttrPopUp" data-toggle="modal" data-target="#editupdatePop"><span class="cuida--edit-outline"></span> Edit Chain Length</i> <i class="removeAttrIco" style="margin-left: initial;">Remove</i></h4>
                                         <div class="rowScroll">
                                           <ul class="attrListRw">
                                             <li class="active">
@@ -1445,6 +1529,81 @@
     </div>
   </div>
 </div> 
+
+
+
+ <!-- Edit / update  popup -->
+<div class="modal fade" id="editupdatePop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog  modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add / Edit Chain Lengths</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="filterRowGrid">
+          <div class="selAll">
+            <input type="checkbox" id="all">
+            <label for="all">Select All</label>
+          </div>
+          <div class="filCol2">
+            <div class="form-group">
+              <input type="text" id="searchChains" placeholder="Filter With Name"/>
+            </div>
+            <div class="form-group">
+              <button type="button" class="btn btn-success" id="updateBtn">Update</button>
+            </div>
+          </div>
+          </div><!--filterRowGrid-->
+
+          <div class="selectionGrid">
+            <div class="gridItem">
+              <input type="checkbox" id="chain1">
+              <label for="chain1">16 inches</label>
+            </div>
+            <div class="gridItem">
+              <input type="checkbox" id="chain2">
+              <label for="chain2">18 inches</label>
+            </div>
+            <div class="gridItem">
+              <input type="checkbox" id="chain3">
+              <label for="chain3">20 inches</label>
+            </div>
+            <div class="gridItem">
+              <input type="checkbox" id="chain4">
+              <label for="chain4">22 inches</label>
+            </div>
+            <div class="gridItem">
+              <input type="checkbox" id="chain5">
+              <label for="chain5">24 inches</label>
+            </div>
+            <div class="gridItem">
+              <input type="checkbox" id="chain6">
+              <label for="chain6">26 inches</label>
+            </div>
+            <div class="gridItem">
+              <input type="checkbox" id="chain7">
+              <label for="chain7">28 inches</label>
+            </div>
+            <div class="gridItem">
+              <input type="checkbox" id="chain8">
+              <label for="chain8">30 inches</label>
+            </div>
+          </div>
+      </div><!--modal-body-->
+      <div class="modal-footer">
+        <div class="row1 btnGroup">
+          <button type="button" class="btn btn-success">Update</button>
+          <!-- <button type="button" class="btn btnSm btnRed">Delete</button> -->
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div><!--modal-->
+
 <!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
@@ -1597,7 +1756,119 @@ $(document).ready(function(){
   });
 </script>
 
+<script>
+  $(function(){
+    // Price Breakdown Toggle
+    $('#priceBreakdownToggle').on('click', function(){
+      const $icon = $(this).find('i');
+      const $content = $('#priceBreakdownContent');
+      $content.slideToggle();
+      $icon.toggleClass('fa-chevron-right fa-chevron-down');
+    });
+  });
+</script>
 
 
-</body>
-</html>
+
+<!-- Grid Multi-Select with All Features -->
+<script>
+$(document).ready(function() {
+  let isSelecting = false;
+  let mouseDownItem = null;
+  let hasMoved = false;
+
+  // Update Select All checkbox based on individual selections
+  function updateSelectAllState() {
+    const total = $('.selectionGrid input[type="checkbox"]').length;
+    const checked = $('.selectionGrid input[type="checkbox"]').filter(':checked').length;
+    $('#all').prop('checked', total > 0 && total === checked);
+  }
+
+  // Drag selection functionality
+  $('.selectionGrid').on('mousedown', '.gridItem', function(e) {
+    if (e.button === 0) { // Left mouse button
+      mouseDownItem = this;
+      hasMoved = false;
+      isSelecting = true;
+      
+      // Clear previous selection highlighting
+      $('.selectionGrid .gridItem').removeClass('selecting');
+      
+      // Start selection with current item - toggle its state
+      $(this).addClass('selecting');
+      const $checkbox = $(this).find('input[type="checkbox"]');
+      $checkbox.prop('checked', !$checkbox.prop('checked'));
+    }
+  });
+
+  $(document).on('mousemove', '.selectionGrid .gridItem', function(e) {
+    if (isSelecting && e.buttons === 1 && mouseDownItem) {
+      if (this !== mouseDownItem) {
+        hasMoved = true;
+      }
+      $(this).addClass('selecting');
+      // Toggle checkbox state as you drag over it
+      const $checkbox = $(this).find('input[type="checkbox"]');
+      const startState = $(mouseDownItem).find('input[type="checkbox"]').prop('checked');
+      $checkbox.prop('checked', startState);
+    }
+  });
+
+  $(document).on('mouseup', function() {
+    if (isSelecting) {
+      isSelecting = false;
+      mouseDownItem = null;
+      setTimeout(() => {
+        $('.selectionGrid .gridItem').removeClass('selecting');
+        updateSelectAllState();
+      }, 50);
+    }
+  });
+
+  // Single click toggle functionality for gridItem container
+  $('.selectionGrid').on('click', '.gridItem', function(e) {
+    if (!hasMoved && e.button === 0) {
+      // Only toggle if not clicking on the label (let the label's native behavior work)
+      if (!$(e.target).is('label')) {
+        const $checkbox = $(this).find('input[type="checkbox"]');
+        const currentState = $checkbox.prop('checked');
+        $checkbox.prop('checked', !currentState);
+      }
+      updateSelectAllState();
+    }
+    hasMoved = false;
+  });
+
+  // Allow native label checkbox behavior
+  $('.selectionGrid').on('change', 'input[type="checkbox"]', function() {
+    updateSelectAllState();
+  });
+
+  // Search/Filter functionality
+  $(document).on('keyup', '#searchChains', function() {
+    const searchText = $(this).val().toLowerCase();
+    $('.selectionGrid .gridItem').each(function() {
+      const itemText = $(this).find('label').text().toLowerCase();
+      $(this).toggle(itemText.includes(searchText));
+    });
+  });
+
+  // Update button click handler
+  $(document).on('click', '#updateBtn', function() {
+    const selectedItems = [];
+    $('.selectionGrid input[type="checkbox"]:checked').each(function() {
+      const label = $(this).siblings('label').text();
+      selectedItems.push(label);
+    });
+    
+    if (selectedItems.length > 0) {
+      console.log('Selected items:', selectedItems);
+      alert('Selected: ' + selectedItems.join(', '));
+    } else {
+      alert('Please select at least one item');
+    }
+  });
+});
+</script>
+
+

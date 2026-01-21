@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="icon" href="dist/img/fav-icon.png" type="image/gif" />
+  <title>Diamond Admin sub category 2</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link href="dist/css/jquery-confirm.min.css" rel="stylesheet">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="dist/css/style-a.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM 
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>-->
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item darkIcon">
+         <span class="material-symbols-light--dark-mode-rounded dark-ico"></span>
+        <span class="iconamoon--mode-light light-ico" style="display: none; "></span>
+       
+      </li>
+
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="fas fa-th-large"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-header" style="text-align: left;">Settings</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-user mr-2"></i> Account
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="login.html" class="dropdown-item">
+            <i class="fas fa-circle nav-icon"></i> Log In
+          </a>
+
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary">
+    <!-- Brand Logo -->
+    <div style="display: flex;max-width: 100%;width: 100%;height: 90px;">
+      <a href="index3.html" class="brand-link">
+        <img src="dist/img/logo1.png" alt="AdminLTE Logo" class="brand-image">
+      </a>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+           <li class="nav-item has-treeview">
+            <a href="home-screen-slide&category.html" class="nav-link active">
+              <i class="nav-icon fas fa-map"></i>
+              <p>
+               Home Screen
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="item-master.html" class="nav-link">
+              <i class="nav-icon fas fa-window-restore"></i>
+              <p>
+               Item Master
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+         
+          <li class="nav-item has-treeview">
+            <a href="category-master.html" class="nav-link">
+              <i class="nav-icon fas fa-user-circle"></i>
+              <p>
+               Category Master
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+           <li class="nav-item has-treeview">
+            <a href="sub-category-master.html" class="nav-link">
+              <i class="nav-icon fas fa-map"></i>
+              <p>
+               Sub Category Master
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+           <li class="nav-item has-treeview">
+            <a href="gemstone-master.html" class="nav-link">
+              <i class="nav-icon fas fa-gem"></i>
+              <p>
+              Gemstone Master
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="vendor-master.html" class="nav-link">
+              <i class="nav-icon fas fa-window-restore"></i>
+              <p>
+               Vendor Master
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="category.html" class="nav-link">
+              <i class="nav-icon fas fa-cubes"></i>
+              <p>
+               Category
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="country-state-city.html" class="nav-link">
+              <i class="nav-icon fas fa-map"></i>
+              <p>
+               Country State City
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="user.html" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+               User
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="ecom-item-maping.html" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+               Ecom Item Mapping
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="order-list.html" class="nav-link">
+              <i class="nav-icon fas fa-cubes"></i>
+              <p>
+               Order List
+                <i class="right fas fa-angle-right"></i>
+              </p>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2" style="width: min(1200px, 100%);  margin: 0px auto;">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Home Screen Management</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Home Screen Management</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row" style="width: min(1200px, 100%);  margin: 0px auto;">
+          <div class="col-md-12">
+            <div class="card mainOuter">
+              <div class="card-header p-2">
+                <ul class="nav nav-pills">
+                  <li class="nav-item"><a class="nav-link active" href="#itemmaster" data-toggle="tab">Home Sreen</a></li>
+                </ul>
+              </div><!-- /.card-header -->
+              <div class="card-body">
+                <div class="tab-content">
+
+                  <div class="tab-pane  active" id="itemmaster">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="card card-secondary">
+                              <div class="card-header">
+                                <h3 class="card-title">Home Slider</h3>
+                              </div>
+
+                              <div class="card-body" style="display: block;">
+                                <div class="adSlider">
+                                  <div class="mb-3 d-flex justify-content-between align-items-center">
+                                    <h5 class="m-0">Slides</h5>
+                                    <div>
+                                      <button id="addSlideBtn" class="btn btn-sm btn-success">Add Slide</button>
+                                    </div>
+                                  </div>
+
+                                  <div id="slidesList" class="mb-3">
+                                    <!-- slide items will render here -->
+                                  </div>
+
+                                  <div class="card">
+                                    <div class="card-body">
+                                      <h6>Preview</h6>
+                                      <div id="mainSliderPreview" class="carousel slide" data-ride="carousel">
+                                        <div class="carousel-inner" id="carouselInner"></div>
+                                        <a class="carousel-control-prev" href="#mainSliderPreview" role="button" data-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#mainSliderPreview" role="button" data-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="sr-only">Next</span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div><!--adSlider-->
+                               
+                              </div>
+                              <!-- /.card-body -->
+                            </div><!--card-->
+
+
+
+                          </div>
+                          <div class="col-md-6">
+
+                            
+                           <div class="card card-secondary">
+                              <div class="card-header">
+                                <h3 class="card-title">Home Category</h3>
+                              </div>
+
+                              <div class="card-body" style="display: block;">
+                                <div class="homeCategory">
+                                  <div class="form-row align-items-end">
+                                    <div class="form-group col-md-12">
+                                      <label for="categorySelect">Select Category</label>
+                                      <select id="categorySelect">
+                                        <!-- options populated by JS -->
+                                      </select>
+                                    </div>
+                                  </div>
+
+                                  <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                      <label>Current Image</label>
+                                      <div id="catPreviewWrap" style="min-height:80px;border:1px dashed #ddd;padding:8px;display:flex;align-items:center;justify-content:center;">
+                                        <img id="catPreview" src="" alt="No Image" style="max-width:100%;max-height:120px;display:none;" />
+                                        <div id="catNoImage" class="text-muted">No image selected</div>
+                                      </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                      <label>Change Image</label>
+                                      <input type="file" id="catImageInput" accept="image/*" class="form-control-file" />
+                                      <div class="mt-2">
+                                        <button id="saveCategoryImageBtn" class="btn btn-sm btn-success">Save Image</button>
+                                        <button id="removeCategoryImageBtn" class="btn btn-sm btn-danger">Remove Image</button>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <hr />
+
+                                  <h6>All Categories</h6>
+                                  <div class="table-responsive">
+                                    <table id="categoriesTable" class="table table1 table-sm table-bordered">
+                                      <thead>
+                                        <tr>
+                                          <th style="width:50%">Category</th>
+                                          <th style="width:50%">Image</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <!-- rows populated by JS -->
+                                      </tbody>
+                                    </table>
+                                  </div>
+
+                                </div><!--homeCategory-->
+                               
+                              </div>
+                              <!-- /.card-body -->
+                            </div><!--card-->
+
+
+                          </div>
+
+                        </div>
+                        <div class="row" style="position: absolute;top: -6.6em;z-index: 10000;margin: 0px auto;width: 100%;">
+                          <div class="col-md-12">
+                          
+                            <table style="margin-left: auto;">
+                              <tr>
+                                <td>
+                                    <div class="row1 btnGroup">
+                                        <button type="button" class="btn btn-danger">Discard</button>
+                                        <button type="button" class="btn btn-success">Save</button>
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                            </table>
+        
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <table style="margin-left: auto;">
+                              <tr>
+                                <td>
+                                    <div class="row1 btnGroup">
+                                        <button type="button" class="btn btn-success">Save</button>
+                                        <button type="button" class="btn btn-danger">Delete</button>
+                                        <button type="button" class="btn btn-dark">Cancel</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            </table>
+                          </div>
+                        </div>
+                  </div>
+                  <!-- /.tab-pane -->
+
+                </div>
+                <!-- /.tab-content -->
+              </div><!-- /.card-body -->
+            </div>
+          </div><!--col-12-->
+        </div>
+        <!-- /.row -->
+
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+
+    <!-- Default to the left -->
+    <strong>Copyright &copy; <span id="yrUpdate"> {auto update year} </span> <a href="#">Admin</a>.</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+
+
+
+
+ <!-- Image uploader popup -->
+ <div class="modal fade" id="imgUploderPop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Image Upload</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <table style="width: 100%;">
+              <tbody>
+                  <tr>
+                      <td>
+                          <div class="form-group"><input type="file"></div>
+                      </td>
+                  </tr>
+
+                  <tr id="imgThumbShowHide">
+                      <td>
+                          <div class="thumbShown">
+                              <figure><img src="images/logo.png" alt=""></figure>
+                              <figcaption>Image Attached Show Here</figcaption>
+                          </div>
+                      </td>
+                  </tr>
+                  
+              </tbody>
+          </table>
+      </div><!--modal-body-->
+      <div class="modal-footer">
+        <div class="row1 btnGroup">
+          <button type="button" class="btn btn-success">Upload</button>
+          <!-- <button type="button" class="btn btnSm btnRed">Delete</button> -->
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div> 
+<!-- Slide Add/Edit Modal -->
+<div class="modal fade" id="slideModal" tabindex="-1" role="dialog" aria-labelledby="slideModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="slideModalLabel">Add Slide</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="slideForm">
+          <div class="form-group">
+            <label>Image</label>
+            <input type="file" accept="image/*" id="slideImageInput" class="form-control-file" required />
+            <div class="mt-2" id="slidePreviewWrap" style="display:none;"><img id="slidePreview" style="max-width:100%;height:auto;"/></div>
+          </div>
+          <div class="form-group">
+            <label>Caption (optional)</label>
+            <input type="text" id="slideCaption" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label>Link (optional)</label>
+            <input type="text" id="slideLink" class="form-control" placeholder="https://..." />
+          </div>
+          <input type="hidden" id="editingIndex" value="-1" />
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" id="saveSlideBtn" class="btn btn-primary">Save Slide</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+
+<script type="text/javascript" src="dist/js/jquery-confirm.min.js"></script>
+<script type="text/javascript">
+	$('.confirmPopup-1').on('click', function () {
+				
+	   $.confirm({
+		title: 'Confirmation',
+		content: 'Something went downhill, this may be serious',
+		type: 'dark',
+		closeIcon: true,
+		typeAnimated: true,
+		theme:'material',
+			buttons: {
+			nobtn: {
+				text: 'Confirm',
+				btnClass: 'btn-green'
+				
+				},
+			yesbtn: {
+				text: 'No',
+				btnClass: 'btn-red',
+				action: function(){
+				}
+				},
+		
+		}
+		});
+	});
+
+	$('.confirmPopup-alert').on('click', function () {
+
+        $.alert({
+        title: 'Alert!',
+        content: 'Simple alert!',
+        });
+      
+
+	});
+</script>
+
+<script>
+  $(".table1 tbody tr").click(function(){
+    $(".table1 tbody tr").removeClass("activeRow");
+    $(this).toggleClass("activeRow");
+  });
+
+  const currentYear = new Date().getFullYear();
+  document.getElementById("yrUpdate").textContent = currentYear;
+</script>
+
+
+<!--images upload and showing to below grid-->
+<script>
+
+        $(document).ready(function () {
+            $("#file-upload").change(function (event) {
+                let files = event.target.files;
+
+                for (let i = 0; i < files.length; i++) {
+                    let reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        let imageDiv = `<div class="uploadedMediaGrid">
+                                                <div class="deleteGridImg"><i class="fas fa-times"></i></div>
+                                                <img src="${e.target.result}" alt="Uploaded Image">
+                                              </div>`;
+                        $(".uploadedMediaGridRow").append(imageDiv); // Append without clearing
+                    };
+
+                    reader.readAsDataURL(files[i]);
+                }
+            });
+        });
+
+
+$(document).on("click", ".deleteGridImg", function(){
+  $(this).parent().remove();
+});
+</script>
+<!--End images upload and showing to below grid-->
+
+
+<!--start Home screen slider management edit delete upload etc..-->
+<script>
+  (function(){
+    const SLIDES_KEY = 'adminSliderSlides';
+    let slides = [];
+    let currentImageData = null;
+
+    function loadSlides(){
+      try{ slides = JSON.parse(localStorage.getItem(SLIDES_KEY)) || []; }catch(e){ slides = []; }
+      // normalize slides to ensure `active` exists
+      slides = slides.map(s => ({ image: s.image, caption: s.caption||'', link: s.link||'', active: (s.active===undefined? true : !!s.active) }));
+    }
+
+    function saveSlides(){ localStorage.setItem(SLIDES_KEY, JSON.stringify(slides)); }
+
+    function renderCarousel(){
+      const $inner = $('#carouselInner');
+      $inner.empty();
+      const activeSlides = slides.filter(s => s.active);
+      if(activeSlides.length===0){
+        $inner.append('<div class="carousel-item active"><div style="height:180px;display:flex;align-items:center;justify-content:center;color:#777;">No active slides</div></div>');
+        return;
+      }
+      activeSlides.forEach((s,i)=>{
+        const active = i===0 ? ' active' : '';
+        const img = `<img src="${s.image}" class="d-block w-100" style="max-height:360px;object-fit:cover;">`;
+        const content = s.link ? `<a href="${s.link}" target="_blank">${img}</a>` : img;
+        const caption = s.caption ? `<div class="carousel-caption d-none d-md-block"><p>${s.caption}</p></div>` : '';
+        $inner.append(`<div class="carousel-item${active}">${content}${caption}</div>`);
+      });
+    }
+
+    function renderSlidesList(){
+      const $list = $('#slidesList');
+      $list.empty();
+      if(!slides.length){ $list.append('<div class="text-muted">No slides. Click Add Slide to create one.</div>'); renderCarousel(); return; }
+      slides.forEach((s,idx)=>{
+        const statusSelect = `<select class="form-control form-control-sm status-select" data-index="${idx}"><option value="1"${s.active? ' selected':''}>Active</option><option value="0"${!s.active? ' selected':''}>Inactive</option></select>`;
+        const inactiveClass = s.active ? '' : ' inactive-slide';
+        const $card = $(
+          `<div class="card mb-2${inactiveClass}" style="margin-bottom:5px !important;"><div class="card-body d-flex align-items-center"><img src="${s.image}" style="width:120px;height:60px;object-fit:cover;margin-right:12px;border:1px solid #ddd;" /><div class="flex-grow-1"><div><strong>${s.caption||''}</strong></div><div class="text-muted small">${s.link||''}</div></div><div style="width:90px;margin-right:8px;">${statusSelect}</div><div class="btn-group btn-group-sm ml-2" role="group"><button class="btn btn-secondary edit-slide-btn" data-index="${idx}">Edit</button><button class="btn btn-danger delete-slide-btn" data-index="${idx}">Delete</button></div></div></div>`
+        );
+        $list.append($card);
+      });
+      renderCarousel();
+    }
+
+    function openAddModal(){
+      currentImageData = null;
+      $('#slideForm')[0].reset();
+      $('#slidePreviewWrap').hide();
+      $('#editingIndex').val(-1);
+      $('#slideModalLabel').text('Add Slide');
+      $('#slideModal').modal('show');
+    }
+
+    function openEditModal(idx){
+      const s = slides[idx];
+      currentImageData = s.image;
+      $('#slideCaption').val(s.caption||'');
+      $('#slideLink').val(s.link||'');
+      $('#editingIndex').val(idx);
+      $('#slidePreview').attr('src', s.image);
+      $('#slidePreviewWrap').show();
+      $('#slideModalLabel').text('Edit Slide');
+      $('#slideModal').modal('show');
+    }
+
+    function handleImageFile(file){
+      const reader = new FileReader();
+      reader.onload = function(e){ currentImageData = e.target.result; $('#slidePreview').attr('src', currentImageData); $('#slidePreviewWrap').show(); };
+      reader.readAsDataURL(file);
+    }
+
+    $(function(){
+      loadSlides(); renderSlidesList();
+      $('#addSlideBtn').on('click', openAddModal);
+
+      $(document).on('click', '.edit-slide-btn', function(){ openEditModal(parseInt($(this).data('index'),10)); });
+      $(document).on('click', '.delete-slide-btn', function(){
+        const idx = parseInt($(this).data('index'),10);
+        if(confirm('Delete this slide?')){ slides.splice(idx,1); saveSlides(); renderSlidesList(); }
+      });
+
+      $(document).on('change', '.status-select', function(){
+        const idx = parseInt($(this).data('index'),10);
+        slides[idx].active = $(this).val() === '1';
+        saveSlides();
+        renderCarousel();
+        // toggle visual state immediately on the row without re-render
+        $(this).closest('.card').toggleClass('inactive-slide', !slides[idx].active);
+      });
+
+      $('#slideImageInput').on('change', function(){ const f = this.files && this.files[0]; if(f) handleImageFile(f); });
+
+      $('#saveSlideBtn').on('click', function(){
+        const caption = $('#slideCaption').val().trim();
+        const link = $('#slideLink').val().trim();
+        const editingIndex = parseInt($('#editingIndex').val(),10);
+        if(!currentImageData){ alert('Please choose an image.'); return; }
+        const slideObj = { image: currentImageData, caption: caption, link: link };
+        if(editingIndex>=0){
+          // preserve existing active state when editing
+          slideObj.active = slides[editingIndex] && slides[editingIndex].active !== undefined ? slides[editingIndex].active : true;
+          slides[editingIndex] = slideObj;
+        } else {
+          slideObj.active = true; // new slides active by default
+          slides.push(slideObj);
+        }
+        saveSlides(); renderSlidesList(); $('#slideModal').modal('hide');
+      });
+    });
+  })();
+</script>
+<!--end Home screen slider management edit delete upload etc..-->
+
+<!--Start home screen category image upload edit update section-->
+<script>
+  (function(){
+    const CAT_KEY = 'adminCategories';
+    let categories = [];
+    let currentCatIndex = 0;
+    let currentImageData = null;
+
+    function defaultCategories(){
+      return [
+        'Round','Princess','Cushion','Emerald','Asscher','Marquise','Oval','Radiant','Pear','Heart','Trilliant','Baguette','Old Mine','Old European'
+      ].map((name, i)=>({ id: i+1, name: name, image: '' }));
+    }
+
+    function loadCategories(){
+      try{ categories = JSON.parse(localStorage.getItem(CAT_KEY)) || defaultCategories(); }catch(e){ categories = defaultCategories(); }
+    }
+
+    function saveCategories(){ localStorage.setItem(CAT_KEY, JSON.stringify(categories)); }
+
+    function populateSelect(){
+      const $sel = $('#categorySelect'); $sel.empty();
+      categories.forEach((c, idx)=>{ $sel.append(`<option value="${idx}">${c.name}</option>`); });
+      $sel.val(currentCatIndex);
+    }
+
+    function showSelectedPreview(){
+      const cat = categories[currentCatIndex];
+      if(cat && cat.image){
+        $('#catPreview').attr('src', cat.image).show();
+        $('#catNoImage').hide();
+      } else {
+        $('#catPreview').hide();
+        $('#catNoImage').show();
+      }
+      currentImageData = cat ? cat.image : null;
+    }
+
+    function renderCategoriesTable(){
+      const $tbody = $('#categoriesTable tbody'); $tbody.empty();
+      categories.forEach((c, idx)=>{
+        const imgCell = c.image ? `<img src="${c.image}" style="max-height:60px;max-width:120px;object-fit:cover;border:1px solid #ddd;"/>` : '<span class="text-muted">No image</span>';
+        const $tr = $(`<tr data-index="${idx}"><td>${c.name}</td><td>${imgCell}</td></tr>`);
+        $tbody.append($tr);
+      });
+    }
+
+    function handleFile(file){
+      const reader = new FileReader();
+      reader.onload = function(e){ currentImageData = e.target.result; $('#catPreview').attr('src', currentImageData).show(); $('#catNoImage').hide(); };
+      reader.readAsDataURL(file);
+    }
+
+    $(function(){
+      loadCategories();
+      populateSelect();
+      showSelectedPreview();
+      renderCategoriesTable();
+
+      $('#categorySelect').on('change', function(){ currentCatIndex = parseInt($(this).val(),10); showSelectedPreview(); });
+
+      $('#catImageInput').on('change', function(){ const f = this.files && this.files[0]; if(f) handleFile(f); });
+
+      $('#saveCategoryImageBtn').on('click', function(){
+        if(!categories[currentCatIndex]) return alert('Select a category');
+        if(!currentImageData) return alert('Please choose an image');
+        categories[currentCatIndex].image = currentImageData;
+        saveCategories(); renderCategoriesTable(); alert('Category image saved');
+      });
+
+      $('#removeCategoryImageBtn').on('click', function(){
+        if(!categories[currentCatIndex]) return;
+        if(!categories[currentCatIndex].image) return alert('No image to remove');
+        if(!confirm('Remove image for this category?')) return;
+        categories[currentCatIndex].image = '';
+        currentImageData = null;
+        saveCategories(); showSelectedPreview(); renderCategoriesTable();
+      });
+
+      // table actions removed: selection is done via dropdown and upload controls
+
+      // Add-new-category removed: categories are fixed or managed elsewhere
+    });
+  })();
+</script>
+<!--end home screen category image upload edit update section-->
+
+</body>
+</html>
