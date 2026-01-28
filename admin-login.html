@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="icon" href="dist/img/fav-icon.png" type="image/gif" />
+    <title>Admin Login</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link href="dist/css/jquery-confirm.min.css" rel="stylesheet">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="dist/css/style-a.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .containerCtr {
+            background: url("dist/img/login-bg-2.jpg") !important;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+        }
+
+        /* Enhance the glassmorphism effect for the new page */
+        .login-container {
+            background: rgba(255, 255, 255, 0.75) !important;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+        }
+
+
+        /* Loader Styles */
+        #loader-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #0a0a0a;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            transition: opacity 0.6s ease-out;
+        }
+
+        #loader-wrapper.fade-out {
+            opacity: 0;
+        }
+
+        .loader {
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+
+        /* The Ring Band */
+        .ring {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border: 4px solid #e5e5e5; /* Silver/Platinum color */
+            border-radius: 50%;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 10px rgba(255,255,255,0.2);
+        }
+
+        /* The Diamond Shape */
+        .diamond {
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            width: 24px;
+            height: 24px;
+            background: #fff;
+            background: linear-gradient(135deg, #ffffff 0%, #a5d8ff 50%, #ffffff 100%);
+            box-shadow: 0 0 15px #fff;
+            animation: sparkle 1.5s infinite ease-in-out;
+            z-index: 2;
+        }
+
+        /* Sparkle Animation */
+        @keyframes sparkle {
+            0%, 100% {
+                transform: translateX(-50%) rotate(45deg) scale(1);
+                filter: brightness(1) blur(0px);
+                box-shadow: 0 0 15px #fff;
+            }
+            50% {
+                transform: translateX(-50%) rotate(45deg) scale(1.1);
+                filter: brightness(1.5) blur(0.5px);
+                box-shadow: 0 0 25px #fff, 0 0 40px #74b9ff;
+            }
+        }
+
+        /* Rotating Glow Effect */
+        .loader::after {
+            content: '';
+            position: absolute;
+            width: 110px;
+            height: 110px;
+            border-top: 2px solid transparent;
+            border-right: 2px solid #fff;
+            border-radius: 50%;
+            animation: rotate 2s linear infinite;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes rotate {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+    </style>
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <!-- Loader wrapper -->
+    <div id="loader-wrapper">
+        <div class="loader">
+            <div class="diamond"></div>
+            <div class="ring"></div>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+
+
+        <div class="containerCtr">
+            <div class="login-container">
+                <h2>Admin Login</h2>
+
+                <div class="form-group">
+                    <label for="adminUser">Username</label>
+                    <input type="text" id="adminUser" name="adminUser">
+                    <div class="error-message" id="userError">Username is required.</div>
+                </div>
+                <div class="form-group">
+                    <label for="adminPass">Password</label>
+                    <input type="password" id="adminPass" name="adminPass">
+                    <div class="error-message" id="passError">Password is required.</div>
+                </div>
+                <div class="form-group">
+                    <a href="#" class="forgotPassLink">Forgot Password ?</a>
+                </div>
+                <button type="submit" class="login-btn btn btn-success">Login</button>
+
+            </div>
+        </div><!--containerCtr-->
+
+
+
+
+    </div>
+    <!-- ./wrapper -->
+
+
+
+
+
+    <!-- Image uploader popup -->
+    <div class="modal fade" id="imgUploderPop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Image Upload</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table style="width: 100%;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="form-group"><input type="file"></div>
+                                </td>
+                            </tr>
+
+                            <tr id="imgThumbShowHide">
+                                <td>
+                                    <div class="thumbShown">
+                                        <figure><img src="images/logo.png" alt=""></figure>
+                                        <figcaption>Image Attached Show Here</figcaption>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div><!--modal-body-->
+                <div class="modal-footer">
+                    <div class="row1 btnGroup">
+                        <button type="button" class="btn btn-success">Upload</button>
+                        <!-- <button type="button" class="btn btnSm btnRed">Delete</button> -->
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- REQUIRED SCRIPTS -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+
+    <script>
+        $(window).on('load', function () {
+            // Fade out loader and show content
+            setTimeout(function () {
+                $('#loader-wrapper').addClass('fade-out');
+
+                setTimeout(function () {
+                    $('#loader-wrapper').hide();
+                }, 600); // Matches fade-out transition time
+
+            }, 500); // Matches fade-out transition time
+        });
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

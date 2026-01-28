@@ -79,8 +79,11 @@
 /* End for Dark theme */
 /* } */
 
-.uploadedMediaGrid {height: 100px; flex: 1 0 160px; max-width: 165px; position: relative;}
-#slidesList .edit-slide-btn, #slidesList .delete-slide-btn,#slidesList .status-select { font-size: 11px; padding: 5px; line-height: 17px;height: 27px;}
+.uploadedMediaGrid {height: 100px; flex: 1 0 160px; max-width: 165px; position: relative; transition: transform 0.3s ease, z-index 0s; z-index: 1;background: #eee;}
+.uploadedMediaGrid:hover {transform: scale(2.2); z-index: 9999; position: relative; opacity:1;box-shadow: 0px 3px 6px 0px #5f5f5f;}
+.card:has(.uploadedMediaGrid:hover) { transform: unset;}
+.uploadedMediaGrid:hover .deleteGridImg { transform: scale(.6);}
+.uploadedMediaGridRow {display: flex; gap: 10px; flex-wrap: wrap; overflow: visible;}
 
 /* Inactive slide row styling */
 .inactive-slide { opacity: 1; }
