@@ -49,6 +49,7 @@ a.nav-link:focus {background: #f3f3f3; border-radius: 4px;}
 .main-footer{font-size: 14px;}
 .nav-sidebar .nav-link>.right, .nav-sidebar .nav-link>p>.right {top: 1rem;}
 .content-wrapper>.content{margin-bottom: 1em;}
+.table tbody tr:nth-child(even) {background: #e8e9ee;}    
 .table tbody tr:hover, .table tbody tr:focus, .table tbody tr:active {background: #efe2b7; cursor: pointer;outline: 2px solid #efe2b7; outline-offset: -1px;}
 .hoverTRNone tbody tr:hover {background: initial; outline: none;}
 .hoverTRNone thead th{border: none;vertical-align: top;}
