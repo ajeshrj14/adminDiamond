@@ -116,7 +116,7 @@ cursor: pointer;   transition: all 0.2s ease;}
 .selectionGrid .gridItem.selecting {background-color: #e3f2fd;border-color: #007bff;   }
 .selectionGrid .gridItem input[type="checkbox"] {cursor: pointer;width: 18px;height: 18px;margin-left: 10px;}
 .selectionGrid .gridItem label {cursor: pointer;margin: 0;flex: 1;padding: 10px 0;}
-.table tbody tr:nth-child(even) { background: #e8e9ee;}    
+ 
 
 @media (min-width: 992px) {
     .sidebar-mini.sidebar-collapse .main-sidebar, .sidebar-mini.sidebar-collapse .main-sidebar::before {
